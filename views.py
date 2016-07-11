@@ -9,6 +9,6 @@ class IndexView(generic.ListView):
 
     def get_context_data(self):
         context = super(IndexView, self).get_context_data()
-        context["project_list"] = Project.objects.order_by("year")
-        context["skill_list"] = Skill.objects.order_by("proficiency")
+        context["project_list"] = Project.objects.all()
+        context["skill_list"] = Skill.objects.all()
         return context
