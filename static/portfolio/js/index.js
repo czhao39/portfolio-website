@@ -1,3 +1,5 @@
+// todo: navbar initially part of summary section, then gradually become smaller when scrolling, then pushpin
+
 $(document).ready(function() {
     $(".typed").typed({
         strings: ["first", "second"],
@@ -5,8 +7,6 @@ $(document).ready(function() {
         backSpeed: 20,
         loop: true,
     });
-    particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json", function() {
-        console.log("particles loaded");
-    });
+    particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     $(".button-collapse").sideNav();
 });
