@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="{% static "portfolio/css/index.css" %}">
 
         <link rel="icon" href="{% static "portfolio/img/icon.png" %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <meta name="author" content="Haicheng Charles Zhao">
         <meta name="description" content="Haicheng Charles Zhao's portfolio website.">
@@ -23,6 +24,37 @@
     </head>
 
     <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a class="brand-logo center">Haicheng Charles Zhao</a>
+                <a data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="slide-out" class="side-nav">
+                    <li><a href="#!">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="{% static "portfolio/img/alexabot.jpg" %}">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">AlexaBot</span>
+                                <p><a href="">Link</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">AlexaBot<i class="material-icons right">close</i></span>
+                                <p>All the things</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Scripts -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
