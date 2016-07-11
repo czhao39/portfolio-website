@@ -5,6 +5,7 @@ class Project(models.Model):
     name = models.CharField(max_length=20)
     year = models.PositiveSmallIntegerField()
     picture = models.ImageField(upload_to="img/")
+    summary = models.CharField(max_length=50)
     details = models.TextField()
 
 
