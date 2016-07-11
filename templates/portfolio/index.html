@@ -41,18 +41,19 @@
                 <div class="col s12 m6">
                     <div class="card small">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="{{ project.image.url }}">
+                            <img class="activator" src="{% static "portfolio/img/" %}{{ project.image.url }}">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">AlexaBot</span>
-                            <p>Use your Amazon Alexa through Facebook Messenger.</p>
+                            <span class="card-title activator grey-text text-darken-4">{{ project.name }}</span>
+                            <p>{{ project.summary }}</p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">AlexaBot<i class="material-icons right">close</i></span>
-                            <p>All the things</p>
+                            <span class="card-title grey-text text-darken-4">{{ project.name }}<i class="material-icons right">close</i></span>
+                            <p>{{ project.details }}</p>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
         </div>
 
