@@ -1,6 +1,5 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -25,17 +24,27 @@
     </head>
 
     <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a class="brand-logo center">Haicheng Charles Zhao</a>
-                <a data-activates="slide-out" class="button-collapse waves-effect waves-light"><i class="material-icons">menu</i></a>
-                <ul id="slide-out" class="side-nav">
-                    <li><a href="#!">Projects</a></li>
-                </ul>
+       <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper teal darken-2">
+                    <a class="brand-logo center">Haicheng Charles Zhao</a>
+                    <a data-activates="slide-out" class="button-collapse waves-effect waves-light"><i class="material-icons">menu</i></a>
+                    <ul id="slide-out" class="side-nav">
+                        <li><a href="#!">Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="page-section teal lighten-2 valign-wrapper">
+            <div id="particles-js"></div>
+            <div class="container valign center-align">
+                <span class="typed center-align"></span>
+                <p>{% lorem %}</p>
             </div>
-        </nav>
+        </div>
 
-        <div class="container">
+        <div id="main" class="container">
             <div class="row">
                 {% for project in project_list %}
                 <div class="col s12 m6">
