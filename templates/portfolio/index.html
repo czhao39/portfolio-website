@@ -56,11 +56,11 @@
                             <img class="activator" src="{% static "portfolio/img/" %}{{ project.image.url }}">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">{{ project.name }}</span>
+                            <span class="card-title activator grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_less</i></span>
                             <p>{{ project.summary }}</p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">{{ project.name }}<i class="material-icons right">close</i></span>
+                            <span class="card-title grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_more</i></span>
                             <p>{{ project.details }}</p>
                         </div>
                     </div>
