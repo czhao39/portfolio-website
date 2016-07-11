@@ -1,5 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -36,10 +37,11 @@
 
         <div class="container">
             <div class="row">
+                {% for project in project_list %}
                 <div class="col s12 m6">
                     <div class="card small">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="{% static "portfolio/img/alexabot.jpg" %}">
+                            <img class="activator" src="{{ project.image.url }}">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">AlexaBot</span>

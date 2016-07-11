@@ -4,7 +4,7 @@ from django.db import models
 class Project(models.Model):
     name = models.CharField(max_length=20)
     year = models.PositiveSmallIntegerField()
-    picture = models.ImageField(upload_to="img/")
+    image = models.ImageField(upload_to="project_images/")
     summary = models.CharField(max_length=50)
     details = models.TextField()
 
