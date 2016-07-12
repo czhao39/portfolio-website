@@ -11,4 +11,5 @@ $(document).ready(function() {
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     $(".button-collapse").sideNav({closeOnClick: true});
     $(".scrollspy").scrollSpy();
+    $('.modal-trigger').leanModal();
 });

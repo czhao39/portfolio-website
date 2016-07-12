@@ -16,6 +16,10 @@ nav a.button-collapse {
     }
 }
 
+#info-trigger {
+    margin-right: 15px;
+}
+
 .page-section {
     position: absolute;
     top: 0;
