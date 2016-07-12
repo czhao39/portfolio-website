@@ -34,10 +34,10 @@ nav a.button-collapse {
 
 .intro-content {
     position: absolute;
-    top: 120;
+    top: 130px;
     left: 0;
     right: 0;
-    display: none;
+    opacity: 0;
 }
 
 #particles-js {

@@ -11,7 +11,8 @@ $(document).ready(function() {
     
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     
-    $(".intro-content").fadeIn(1500).animate({top: 90}, {queue: false, duration: 1000});
+    //$(".intro-content").fadeIn(1500).animate({top: 90}, {queue: false, duration: 1000});
+    $(".intro-content").velocity({top: 90, opacity: 1}, {duration: 1000}, {queue: false});
 
     $(".button-collapse").sideNav({closeOnClick: true, menuWidth: 245});
     
