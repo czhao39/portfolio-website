@@ -66,6 +66,10 @@ nav a.button-collapse {
     font-size: 1.2em;
 }
 
+#contact-btn {
+    margin-left: 1em;
+}
+
 .down-btn {
     width: 100%;
     position: absolute;
@@ -130,4 +134,8 @@ footer {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
+}
+
+@media (max-width: 375px) {
+    #contact-btn {margin: 0;}
 }
