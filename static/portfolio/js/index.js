@@ -8,5 +8,6 @@ $(document).ready(function() {
         loop: true,
     });
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav({closeOnClick: true});
+    $(".scrollspy").scrollSpy();
 });
