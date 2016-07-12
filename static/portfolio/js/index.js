@@ -18,9 +18,9 @@ $(document).ready(function() {
     
     $(".scrollspy").scrollSpy();
     var sr = ScrollReveal();
-    sr.reveal(".section");
-    sr.reveal("#skills tr");
-    sr.reveal(".card");
+    sr.reveal(".section", {duration: 1000});
+    sr.reveal("#skills tr", {duration: 1000});
+    sr.reveal(".card", {duration: 1500});
     
     $('.modal-trigger').leanModal();
 });
