@@ -16,6 +16,10 @@ nav a.button-collapse {
     }
 }
 
+#slide-out .btn-li {
+    margin-top: 5vh;
+}
+
 #info-trigger {
     margin-right: 15px;
 }
