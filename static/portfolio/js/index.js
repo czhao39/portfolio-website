@@ -11,5 +11,8 @@ $(document).ready(function() {
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     $(".button-collapse").sideNav({closeOnClick: true});
     $(".scrollspy").scrollSpy();
+    var sr = ScrollReveal();
+    sr.reveal("#skills tr");
+    sr.reveal(".card");
     $('.modal-trigger').leanModal();
 });
