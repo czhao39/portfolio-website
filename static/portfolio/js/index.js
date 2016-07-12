@@ -20,7 +20,7 @@ $(document).ready(function() {
     var sr = ScrollReveal();
     sr.reveal(".section", {duration: 1000});
     sr.reveal("#skills tr", {duration: 1000});
-    sr.reveal(".card", {duration: 1500});
+    sr.reveal(".card", {duration: 1000});
     
     $('.modal-trigger').leanModal();
 });
