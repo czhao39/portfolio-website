@@ -3,8 +3,9 @@
 $(document).ready(function() {
     $(".typed").typed({
         strings: ["first", "second"],
-        typeSpeed: 40,
+        typeSpeed: 20,
         backSpeed: 20,
+        backDelay: 1000,
         loop: true,
     });
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
