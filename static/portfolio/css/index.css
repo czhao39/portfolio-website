@@ -79,6 +79,12 @@ nav a.button-collapse {
     width: 100%;
     position: absolute;
     bottom: 0;
+    -webkit-transition: text-shadow .2s;
+    transition: text-shadow .2s;
+}
+
+.down-btn:hover {
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
 }
 
 main {
