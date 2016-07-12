@@ -64,7 +64,7 @@
                         {% for skill in skill_list %}
                         <tr>
                             <td><span class="right skill-name">{{ skill.name }}</span></td>
-                            <td class="center-align">
+                            <td class="left">
                                 {% for star in skill.stars_list %}
                                 {% if star < skill.proficiency %}
                                 <i class="material-icons">brightness_1</i>
