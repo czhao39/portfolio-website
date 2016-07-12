@@ -31,12 +31,12 @@ nav a.button-collapse {
 }
 
 .typed {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 200;
 }
 
 .typed-cursor{
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 200;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -60,6 +60,10 @@ nav a.button-collapse {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+#summary {
+    font-size: 1.2em;
 }
 
 .down-btn {
