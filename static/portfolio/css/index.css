@@ -2,6 +2,15 @@ body {
     font-weight: 300;
 }
 
+nav {
+    box-shadow: none;
+}
+
+.nav-wrapper {
+    background-color: #4db6ac;
+    box-shadow: none;
+}
+
 nav a.button-collapse {
     margin-left: 1em;
 }

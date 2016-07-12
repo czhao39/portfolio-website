@@ -11,11 +11,28 @@ $(document).ready(function() {
     
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     
-    //$(".intro-content").fadeIn(1500).animate({top: 90}, {queue: false, duration: 1000});
     $(".intro-content").velocity({top: 90, opacity: 1}, {duration: 1000}, {queue: false});
 
     $(".button-collapse").sideNav({closeOnClick: true, menuWidth: 245});
     
+    $window = $(window);
+    $nav_wrapper = $(".nav-wrapper");
+    $nav = $("nav");
+    var is_dark = false;
+    $window.scroll(function() {
+        var pos = $window.scrollTop();
+        if (pos == 0) {
+            $nav_wrapper.velocity({backgroundColor: "#4db6ac"}, {duration: 400});
+            $nav.css("box-shadow", "none");
+            is_dark = false;
+        }
+        else if (!is_dark) {
+            $nav_wrapper.velocity({backgroundColor: "#00796b"}, {duration: 400});
+            $nav.css("box-shadow", "0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)");
+            is_dark = true;
+        }
+    });
+
     $(".scrollspy").scrollSpy();
     var sr = ScrollReveal();
     sr.reveal(".section", {duration: 1000});
