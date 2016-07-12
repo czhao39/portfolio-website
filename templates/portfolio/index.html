@@ -11,7 +11,6 @@
 
         <link rel="icon" href="{% static "portfolio/img/favicon.png" %}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
         <meta name="author" content="Haicheng Charles Zhao">
         <meta name="description" content="Haicheng Charles Zhao's portfolio website.">
@@ -21,83 +20,92 @@
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+        <script src="https://use.fontawesome.com/6410c3e3d5.js"></script>
     </head>
 
     <body>
-       <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper teal darken-2">
-                    <a class="brand-logo page-title center">Haicheng Charles Zhao</a>
-                    <a data-activates="slide-out" class="button-collapse waves-effect waves-light"><i class="material-icons">menu</i></a>
-                    <ul id="slide-out" class="side-nav">
-                        <li><a href="#intro"><i class="material-icons left">home</i>Introduction</a></li>
-                        <li><a href="#skills"><i class="material-icons left">code</i>Skills</a></li>
-                        <li><a href="#projects"><i class="material-icons left">computer</i>Projects</a></li>
-                    </ul>
+        <header>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper teal darken-2">
+                        <a class="brand-logo page-title center">Haicheng Charles Zhao</a>
+                        <a data-activates="slide-out" class="button-collapse waves-effect waves-light"><i class="material-icons">menu</i></a>
+                        <ul id="slide-out" class="side-nav">
+                            <li><a href="#intro"><i class="material-icons left">home</i>Introduction</a></li>
+                            <li><a href="#skills"><i class="material-icons left">code</i>Skills</a></li>
+                            <li><a href="#projects"><i class="material-icons left">computer</i>Projects</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div id="intro" class="page-section teal lighten-2 valign-wrapper scrollspy">
+                <div id="particles-js"></div>
+                <div class="container valign center-align">
+                    <img id="favicon" src="{% static "portfolio/img/favicon.png" %}" width=200 alt="picture of me">
+                    <br>
+                    <span class="typed"></span>
+                    <p id="summary">{% lorem %}</p>
+                    <br>
+                    <a href="{% static "portfolio/resume.pdf" %}" target="_blank" class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>R&eacute;sum&eacute;</a>
+                    <br><br>
                 </div>
-            </nav>
-        </div>
-        
-        <div id="intro" class="page-section teal lighten-2 valign-wrapper scrollspy">
-            <div id="particles-js"></div>
-            <div class="container valign center-align">
-                <img id="favicon" src="{% static "portfolio/img/favicon.png" %}" width=200 alt="picture of me">
-                <br>
-                <span class="typed"></span>
-                <p id="summary">{% lorem %}</p>
-                <br>
-                <a href="{% static "portfolio/resume.pdf" %}" target="_blank" class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>R&eacute;sum&eacute;</a>
-                <br><br>
+                <div class="down-btn center-align"><a href="#skills"><i class="material-icons large black-text">expand_more</i></a></div>
             </div>
-            <div class="down-btn center-align"><a href="#skills"><i class="material-icons large black-text">expand_more</i></a></div>
-        </div>
+        </header>
 
-        <div id="main" class="container">
-            <div id="skills" class="section scrollspy">
-                <h2 class="center-align">Skills</h2>
-                <table>
-                    {% for skill in skill_list %}
-                    <tr>
-                        <td><span class="right skill-name">{{ skill.name }}</span></td>
-                        <td class="center-align">
-                            {% for star in skill.stars_list %}
-                            {% if star < skill.proficiency %}
-                            <i class="material-icons">brightness_1</i>
-                            {% else %}
-                            <i class="material-icons">radio_button_unchecked</i>
-                            {% endif %}
-                            {% endfor %}
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </table>
-            </div>
-        </div>
+        <main>
+            <div class="container">
+                <div id="skills" class="section scrollspy">
+                    <h2 class="center-align">Skills</h2>
+                    <table>
+                        {% for skill in skill_list %}
+                        <tr>
+                            <td><span class="right skill-name">{{ skill.name }}</span></td>
+                            <td class="center-align">
+                                {% for star in skill.stars_list %}
+                                {% if star < skill.proficiency %}
+                                <i class="material-icons">brightness_1</i>
+                                {% else %}
+                                <i class="material-icons">radio_button_unchecked</i>
+                                {% endif %}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
 
-        <div class="divider"></div>
-        
-        <div id="projects" class="section scrollspy">
-            <h2 class="center-align">Projects</h2>
-            <div class="row">
-                {% for project in project_list %}
-                <div class="col s12 m6 l5{% cycle ' offset-l1' '' %}">
-                    <div class="card medium">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="{% static "portfolio/img/" %}{{ project.image.url }}">
+                <div class="divider"></div>
+            
+                <div id="projects" class="section scrollspy">
+                    <h2 class="center-align">Projects</h2>
+                    <div class="row">
+                        {% for project in project_list %}
+                        <div class="col s12 m6 l5{% cycle ' offset-l1' '' %}">
+                            <div class="card medium">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="{% static "portfolio/img/" %}{{ project.image.url }}">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_less</i></span>
+                                    <p>{{ project.summary }}</p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_more</i></span>
+                                    <p>{{ project.details }}</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_less</i></span>
-                            <p>{{ project.summary }}</p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_more</i></span>
-                            <p>{{ project.details }}</p>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
-                {% endfor %}
             </div>
-        </div>
+        </main>
+
+        <footer class="footer-copyright teal darken-1 white-text center-align">
+            Made with &nbsp;<i class="fa fa-heart red-text text-lighten-2 tooltipped animated infinite pulse" data-position="top" data-delay="0" data-tooltip="Thanks for visiting!"></i>&nbsp; by Charles Zhao
+        </footer>
 
         <!-- Scripts -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
