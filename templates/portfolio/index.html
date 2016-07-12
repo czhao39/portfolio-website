@@ -75,9 +75,22 @@
 
             <div class="section">
                 <h2 class="center-align">Skills</h2>
-                <div class="row">
-                
-                </div>
+                <table>
+                    {% for skill in skill_list %}
+                    <tr>
+                        <td><span class="right skill-name">{{ skill.name }}</span></td>
+                        <td class="center-align">
+                            {% for star in skill.stars_list %}
+                            {% if star < skill.proficiency %}
+                            <i class="material-icons">brightness_1</i>
+                            {% else %}
+                            <i class="material-icons">radio_button_unchecked</i>
+                            {% endif %}
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
             </div>
         </div>
 
