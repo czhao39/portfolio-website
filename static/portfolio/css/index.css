@@ -28,6 +28,14 @@ nav a.button-collapse {
     right: 0;
 }
 
+.intro-content {
+    position: absolute;
+    top: 120;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
 #particles-js {
     width: 100%;
     height: 100%;
