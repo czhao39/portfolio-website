@@ -13,7 +13,7 @@ $(document).ready(function() {
     
     $(".intro-content").fadeIn(1500).animate({top: 90}, {queue: false, duration: 1000});
 
-    $(".button-collapse").sideNav({closeOnClick: true});
+    $(".button-collapse").sideNav({closeOnClick: true, menuWidth: 250});
     
     $(".scrollspy").scrollSpy();
     var sr = ScrollReveal();
