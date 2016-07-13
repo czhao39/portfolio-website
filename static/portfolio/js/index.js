@@ -22,16 +22,14 @@ $(document).ready(function() {
         var pos = $window.scrollTop();
         if (pos == 0) {
             $nav_wrapper.velocity({backgroundColor: "#4db6ac"}, {duration: 200}).velocity({paddingTop: "10px"}, {queue: false});
-            //$page_title.velocity({fontSize: "2.5em"}, {duration: 400}, {queue: false});
-            $page_title.animate({fontSize: "2.5em"}, 400);
+            $page_title.velocity({fontSize: "2.5rem"}, {queue: false});
             $nav.css("box-shadow", "none");
             is_dark = false;
         }
         else if (!is_dark) {
             $nav_wrapper.velocity({backgroundColor: "#00796b"}, {duration: 200}).velocity({paddingTop: "0"}, {queue: false});
             $nav.css("box-shadow", "0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)");
-            //$page_title.velocity({fontSize: "2em"}, {duration: 400}, {queue: false});
-            $page_title.animate({fontSize: "2em"}, 400);
+            $page_title.velocity({fontSize: "2rem"}, {queue: false});
             is_dark = true;
         }
     });
