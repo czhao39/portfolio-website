@@ -18,17 +18,24 @@ $(document).ready(function() {
     $window = $(window);
     $nav_wrapper = $(".nav-wrapper");
     $nav = $("nav");
+    $page_title = $(".page-title");
     var is_dark = false;
     $window.scroll(function() {
         var pos = $window.scrollTop();
         if (pos == 0) {
             $nav_wrapper.velocity({backgroundColor: "#4db6ac"}, {duration: 400});
+            //$page_title.velocity({fontSize: "2.5em"}, {duration: 400}, {queue: false});
+            $page_title.animate({fontSize: "2.5em"}, 400);
+            //$page_title.css("font-size", "2.5em");
             $nav.css("box-shadow", "none");
             is_dark = false;
         }
         else if (!is_dark) {
             $nav_wrapper.velocity({backgroundColor: "#00796b"}, {duration: 400});
             $nav.css("box-shadow", "0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)");
+            //$page_title.velocity({fontSize: "2em"}, {duration: 400}, {queue: false});
+            $page_title.animate({fontSize: "2em"}, 400);
+            //$page_title.css("font-size", "2em");
             is_dark = true;
         }
     });
