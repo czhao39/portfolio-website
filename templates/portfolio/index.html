@@ -41,10 +41,12 @@
                     </div>
                 </nav>
             </div>
-            
+       </header>
+
+        <main>
             <div id="intro" class="page-section teal lighten-2 valign-wrapper scrollspy">
                 <div id="particles-js"></div>
-                <div class="container valign center-align intro-content">
+                <div class="valign center-align intro-content container">
                     <img id="favicon" src="{% static "portfolio/img/favicon.png" %}" width=200 alt="picture of me">
                     <br>
                     <span class="typed"></span>
@@ -56,62 +58,57 @@
                             <td class="hide-on-small-only"><a href="mailto:czhao39@gmail.com" target="_blank" class="waves-effect waves-light btn left"><i class="material-icons left">mail_outline</i>Contact</a></td>
                             <td class="hide-on-med-and-up"><a href="{% static "portfolio/resume.pdf" %}" target="_blank" class="waves-effect waves-light btn-floating btn-large right"><i class="material-icons left">assignment_ind</i></a></td>
                             <td class="hide-on-med-and-up"><a href="mailto:czhao39@gmail.com" target="_blank" class="waves-effect waves-light btn-floating btn-large left"><i class="material-icons left">mail_outline</i></a></td>
-
                         </tr>
                     </table>
                     <br><br>
                 </div>
                 <div class="down-btn center-align"><a href="#skills"><i class="material-icons large grey-text text-lighten-2">expand_more</i></a></div>
             </div>
-        </header>
 
-        <main>
-            <div class="container">
-                <div id="skills" class="section scrollspy">
-                    <h2 class="center-align">Skills</h2>
-                    <div class="table-div">
-                        <table>
-                            {% for skill in skill_list %}
-                            <tr>
-                                <td><span class="right skill-name">{{ skill.name }}</span></td>
-                                <td class="left">
-                                    {% for star in skill.stars_list %}
-                                    {% if star < skill.proficiency %}
-                                    <i class="material-icons">brightness_1</i>&nbsp;
-                                    {% else %}
-                                    <i class="material-icons">radio_button_unchecked</i>&nbsp;
-                                    {% endif %}
-                                    {% endfor %}
-                                </td>
-                            </tr>
-                            {% endfor %}
-                        </table>
-                    </div>
+            <div id="skills" class="section scrollspy container">
+                <h2 class="center-align">Skills</h2>
+                <div class="table-div">
+                    <table>
+                        {% for skill in skill_list %}
+                        <tr>
+                            <td><span class="right skill-name">{{ skill.name }}</span></td>
+                            <td class="left">
+                                {% for star in skill.stars_list %}
+                                {% if star < skill.proficiency %}
+                                <i class="material-icons">brightness_1</i>&nbsp;
+                                {% else %}
+                                <i class="material-icons">radio_button_unchecked</i>&nbsp;
+                                {% endif %}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
                 </div>
+            </div>
 
-                <div class="divider"></div>
-            
-                <div id="projects" class="section scrollspy">
-                    <h2 class="center-align">Projects</h2>
-                    <div class="row">
-                        {% for project in project_list %}
-                        <div class="col s12 m6 l5{% cycle ' offset-l1' '' %}">
-                            <div class="card medium">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="{% static "portfolio/img/" %}{{ project.image.url }}">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_less</i></span>
-                                    <p>{{ project.summary }}</p>
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_more</i></span>
-                                    <p>{{ project.details }}</p>
-                                </div>
+            <div class="divider"></div>
+        
+            <div id="projects" class="section scrollspy container">
+                <h2 class="center-align">Projects</h2>
+                <div class="row">
+                    {% for project in project_list %}
+                    <div class="col s12 m6 l5{% cycle ' offset-l1' '' %}">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="{% static "portfolio/img/" %}{{ project.image.url }}">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_less</i></span>
+                                <p>{{ project.summary }}</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">{{ project.name }}<i class="material-icons right">expand_more</i></span>
+                                <p>{{ project.details }}</p>
                             </div>
                         </div>
-                        {% endfor %}
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </main>

@@ -113,12 +113,12 @@ nav a.button-collapse {
     color: white !important;
 }
 
-main {
-    margin-top: 100vh;
-}
-
 .table-div {
     overflow-x: auto;
+}
+
+#skills {
+    margin-top: calc(100vh - 60px);
 }
 
 #skills td {
