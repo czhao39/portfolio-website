@@ -50,10 +50,13 @@
                     <span class="typed"></span>
                     <p id="summary">{% lorem %}</p>
                     <br>
-                    <table>
+                    <table class="btns-table">
                         <tr>
-                            <td><a href="{% static "portfolio/resume.pdf" %}" target="_blank" class="waves-effect waves-light btn right"><i class="material-icons left">assignment_ind</i>R&eacute;sum&eacute;</a></td>
-                            <td><a href="mailto:czhao39@gmail.com" target="_blank" class="waves-effect waves-light btn left"><i class="material-icons left">mail_outline</i>Get in touch</a></td>
+                            <td class="hide-on-small-only"><a href="{% static "portfolio/resume.pdf" %}" target="_blank" class="waves-effect waves-light btn right"><i class="material-icons left">assignment_ind</i>R&eacute;sum&eacute;</a></td>
+                            <td class="hide-on-small-only"><a href="mailto:czhao39@gmail.com" target="_blank" class="waves-effect waves-light btn left"><i class="material-icons left">mail_outline</i>Contact</a></td>
+                            <td class="hide-on-med-and-up"><a href="{% static "portfolio/resume.pdf" %}" target="_blank" class="waves-effect waves-light btn-floating btn-large right"><i class="material-icons left">assignment_ind</i></a></td>
+                            <td class="hide-on-med-and-up"><a href="mailto:czhao39@gmail.com" target="_blank" class="waves-effect waves-light btn-floating btn-large left"><i class="material-icons left">mail_outline</i></a></td>
+
                         </tr>
                     </table>
                     <br><br>

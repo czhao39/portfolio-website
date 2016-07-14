@@ -92,9 +92,9 @@ nav a.button-collapse {
     font-size: 1.2rem;
 }
 
-#intro td {
+.btns-table td {
     width: 50%;
-    padding: 1rem;
+    padding: 0 2rem;
 }
 
 .down-btn {
