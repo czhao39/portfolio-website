@@ -117,19 +117,13 @@ main {
     margin-top: 100vh;
 }
 
-/*#skills table {
-    display: block;
-    overflow-x: auto;
-}*/
-
 .table-div {
     overflow-x: auto;
 }
 
 #skills td {
     width: 50%;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 1rem 5rem;
     white-space: nowrap;
 }
 
@@ -191,9 +185,11 @@ footer {
 
 @media (max-width: 640px) and (min-width: 376px) {
     .page-title {font-size: 1.8rem;}
+    #skills td {padding: 1rem 3rem;}
 }
 
 @media (max-width: 375px) {
     .page-title {font-size: 1.2rem;}
+    #skills td {padding: 1rem 2rem;}
     #contact-btn {margin: 0;}
 }
