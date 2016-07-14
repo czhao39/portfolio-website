@@ -67,7 +67,7 @@ nav a.button-collapse {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    animation: blink 1s infinite;
 }
 
 @-webkit-keyframes blink{
