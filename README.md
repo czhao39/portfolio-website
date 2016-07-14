@@ -1,1 +1,1 @@
-A Django app containing my projects and skills.
+A Django app showcasing my projects and skills.
