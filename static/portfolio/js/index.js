@@ -22,18 +22,30 @@ $(document).ready(function() {
         var pos = $window.scrollTop();
         if (pos == 0) {
             $nav_wrapper.velocity({backgroundColor: "#4db6ac"}, {duration: 200}).velocity({paddingTop: "10px"}, {queue: false});
-            $page_title.velocity({fontSize: "2.5rem"}, {queue: false});
             $nav.css("box-shadow", "none");
+            if ($window.width() <= 375)
+                $page_title.velocity({fontSize: "1.2rem"}, {queue: false});
+            else if ($window.width() <= 640)
+                $page_title.velocity({fontSize: "1.8rem"}, {queue: false});
+            else 
+                $page_title.velocity({fontSize: "2.5rem"}, {queue: false});
             is_dark = false;
         }
         else if (!is_dark) {
             $nav_wrapper.velocity({backgroundColor: "#00796b"}, {duration: 200}).velocity({paddingTop: "0"}, {queue: false});
             $nav.css("box-shadow", "0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)");
-            $page_title.velocity({fontSize: "2rem"}, {queue: false});
+            if ($window.width() <= 375)
+                $page_title.velocity({fontSize: "1.1rem"}, {queue: false});
+            else if ($window.width() <= 640)
+                $page_title.velocity({fontSize: "1.6rem"}, {queue: false});
+            else 
+                $page_title.velocity({fontSize: "2rem"}, {queue: false});
+
             is_dark = true;
         }
     });
     $window.scroll();
+    $window.resize(function() {$window.scroll();});
 
     $(".scrollspy").scrollSpy();
     var sr = ScrollReveal();
