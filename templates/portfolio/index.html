@@ -67,22 +67,24 @@
             <div class="container">
                 <div id="skills" class="section scrollspy">
                     <h2 class="center-align">Skills</h2>
-                    <table>
-                        {% for skill in skill_list %}
-                        <tr>
-                            <td><span class="right skill-name">{{ skill.name }}</span></td>
-                            <td class="left">
-                                {% for star in skill.stars_list %}
-                                {% if star < skill.proficiency %}
-                                <i class="material-icons">brightness_1</i>&nbsp;
-                                {% else %}
-                                <i class="material-icons">radio_button_unchecked</i>&nbsp;
-                                {% endif %}
-                                {% endfor %}
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </table>
+                    <div class="table-div">
+                        <table>
+                            {% for skill in skill_list %}
+                            <tr>
+                                <td><span class="right skill-name">{{ skill.name }}</span></td>
+                                <td class="left">
+                                    {% for star in skill.stars_list %}
+                                    {% if star < skill.proficiency %}
+                                    <i class="material-icons">brightness_1</i>&nbsp;
+                                    {% else %}
+                                    <i class="material-icons">radio_button_unchecked</i>&nbsp;
+                                    {% endif %}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
                 </div>
 
                 <div class="divider"></div>

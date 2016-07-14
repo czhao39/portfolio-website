@@ -113,8 +113,12 @@ main {
     margin-top: 100vh;
 }
 
-#skills table {
+/*#skills table {
     display: block;
+    overflow-x: auto;
+}*/
+
+.table-div {
     overflow-x: auto;
 }
 
