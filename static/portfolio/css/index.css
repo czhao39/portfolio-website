@@ -132,6 +132,10 @@ nav a.button-collapse {
     margin: 20px auto 0 auto;
 }
 
+.card {
+    margin: 30px 20px;
+}
+
 footer {
     font-size: 1.2rem;
     padding: 10px;
@@ -187,6 +191,7 @@ footer {
 @media (max-width: 640px) and (min-width: 376px) {
     .page-title {font-size: 1.8rem;}
     #skills td {padding: 1rem 3rem;}
+    .card {margin: 10px 0;}
 }
 
 @media (max-width: 375px) {
