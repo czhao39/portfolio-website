@@ -99,14 +99,19 @@ nav a.button-collapse {
     bottom: 0;
 }
 
-.down-btn i {
+.arrow {
     -webkit-transition: text-shadow .5s, color .5s;
     transition: text-shadow .5s, color .5s;
 }
 
-.down-btn i:hover {
+.arrow-white:hover {
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
     color: white !important;
+}
+
+.arrow-black:hover {
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
+    color: black !important;
 }
 
 .table-div {
