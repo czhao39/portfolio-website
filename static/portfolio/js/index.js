@@ -18,37 +18,11 @@ $(document).ready(function() {
     $navbar = $(".navbar");
     $navbar.pushpin({top: 50});
     $window = $(window);
-    $page_title = $(".page-title");
-    var is_dark = false;
-    /*$window.scroll(function() {
-        var pos = $window.scrollTop();
-        if (pos == 0) {
-            $nav_wrapper.velocity({backgroundColor: "#4db6ac"}, {duration: 200}).velocity({paddingTop: "10px"}, {queue: false});
-            $nav.css("box-shadow", "none");
-            if ($window.width() <= 375)
-                $page_title.velocity({fontSize: "1.2rem"}, {queue: false});
-            else if ($window.width() <= 640)
-                $page_title.velocity({fontSize: "1.8rem"}, {queue: false});
-            else 
-                $page_title.velocity({fontSize: "2.5rem"}, {queue: false});
-            is_dark = false;
-        }
-        else if (!is_dark) {
-            $nav_wrapper.velocity({backgroundColor: "#00796b"}, {duration: 200}).velocity({paddingTop: "0"}, {queue: false});
-            $nav.css("box-shadow", "0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)");
-            if ($window.width() <= 375)
-                $page_title.velocity({fontSize: "1.1rem"}, {queue: false});
-            else if ($window.width() <= 640)
-                $page_title.velocity({fontSize: "1.6rem"}, {queue: false});
-            else 
-                $page_title.velocity({fontSize: "2rem"}, {queue: false});
-
-            is_dark = true;
-        }
+    $window.scroll(function() {
+        $navbar.css("background-color", "rgba(69, 90, 100, " + ($window.scrollTop()/50).toString() + ")");
     });
     $window.scroll();
-    $window.resize(function() {$window.scroll();});*/
-
+    
     var sr = ScrollReveal();
     sr.reveal(".section", {duration: 1000});
     sr.reveal("#skills tr", {duration: 1000});
