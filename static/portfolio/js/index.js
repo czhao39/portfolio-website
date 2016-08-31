@@ -1,24 +1,26 @@
 $(document).ready(function() {
     $(".typed").typed({
         strings: ["first", "second"],
-        typeSpeed: 20,
-        backSpeed: 20,
+        typeSpeed: 80,
+        backSpeed: 60,
         backDelay: 1000,
         loop: true,
     });
     
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     
-    $(".intro-content").velocity({top: 90, opacity: 1}, {duration: 1000}, {queue: false});
+    $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 1000}, {queue: false});
 
-    $(".button-collapse").sideNav({closeOnClick: true, menuWidth: 245});
-    
+    $(".arrow-white").click(function() {
+        $("body, html").animate({scrollTop: window.innerHeight});
+    });
+
     $window = $(window);
     $nav_wrapper = $(".nav-wrapper");
     $nav = $("nav");
     $page_title = $(".page-title");
     var is_dark = false;
-    $window.scroll(function() {
+    /*$window.scroll(function() {
         var pos = $window.scrollTop();
         if (pos == 0) {
             $nav_wrapper.velocity({backgroundColor: "#4db6ac"}, {duration: 200}).velocity({paddingTop: "10px"}, {queue: false});
@@ -45,13 +47,10 @@ $(document).ready(function() {
         }
     });
     $window.scroll();
-    $window.resize(function() {$window.scroll();});
+    $window.resize(function() {$window.scroll();});*/
 
-    $(".scrollspy").scrollSpy();
     var sr = ScrollReveal();
     sr.reveal(".section", {duration: 1000});
     sr.reveal("#skills tr", {duration: 1000});
     sr.reveal(".card", {duration: 1000});
-    
-    $('.modal-trigger').leanModal();
 });

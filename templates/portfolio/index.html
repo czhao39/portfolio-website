@@ -6,7 +6,7 @@
         <title>Haicheng Charles Zhao - Portfolio Website</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <link rel="stylesheet" href="{% static "portfolio/css/index.css" %}">
 
         <link rel="icon" href="{% static "portfolio/img/favicon.png" %}">
@@ -14,54 +14,37 @@
 
         <meta name="author" content="Haicheng Charles Zhao">
         <meta name="description" content="Haicheng Charles Zhao's portfolio website.">
-        <meta name="theme-color" content="#00796b">
+        <meta name="theme-color" content="#212121">
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
         <!-- Scripts -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
     </head>
 
     <body>
         <header>
-            <div class="navbar-fixed">
-                <nav>
-                    <div class="nav-wrapper">
-                        <a class="brand-logo page-title center">Haicheng Charles Zhao</a>
-                        <a data-activates="slide-out" class="button-collapse waves-effect waves-light"><i class="material-icons">menu</i></a>
-                        <ul id="slide-out" class="side-nav">
-                            <li><a href="#intro"><i class="material-icons left">home</i>Introduction</a></li>
-                            <li><a href="#skills"><i class="material-icons left">code</i>Skills</a></li>
-                            <li><a href="#projects"><i class="material-icons left">computer</i>Projects</a></li>
-                            <li class="btn-li">
-                                <a href="mailto:czhao39@gmail.com" target="_blank" class="waves-effect waves-light btn left"><i class="material-icons left">mail_outline</i>Get in touch</a>
-                            </li>
-                        </ul>
-                        <a id="info-trigger" href="#info" class="modal-trigger waves-effect waves-light right"><i class="material-icons">info</i></a>
-                    </div>
-                </nav>
-            </div>
-       </header>
+            <nav>
+                <div class="navbar">
+                    <a class="page-title left white-text">H. Charles Zhao</a>
+                    <ul class="right">
+                        <li><a href="{% static "portfolio/resume.pdf" %}" target="_blank" title="Resume"><i class="fa fa-file-text-o fa-2x"></i></a></li>
+                        <li><a href="mailto:czhao39@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                        <li><a href="https://github.com/czhao39" target="_blank" title="Github"><i class="fa fa-github fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         <main>
-            <div id="intro" class="page-section teal lighten-2 valign-wrapper scrollspy">
+            <div id="intro" class="page-section grey darken-4 valign-wrapper scrollspy">
                 <div id="particles-js"></div>
                 <div class="valign center-align intro-content container">
-                    <img id="favicon" src="{% static "portfolio/img/favicon.png" %}" width=150 alt="picture of me">
-                    <br>
-                    <span class="typed white-text"></span>
-                    <p id="summary" class="white-text">{% lorem %}</p>
-                    <br>
-                    <table class="btns-table container">
-                        <tr>
-                            <td class="right-align"><a href="{% static "portfolio/resume.pdf" %}" target="_blank" class="waves-effect waves-light btn-floating btn-large" title="Resume"><i class="material-icons">assignment_ind</i></a></td>
-                            <td class="center-align"><a href="mailto:czhao39@gmail.com" target="_blank" class="waves-effect waves-light btn-floating btn-large" title="Email"><i class="material-icons">mail_outline</i></a></td>
-                            <td class="left-align"><a href="https://github.com/czhao39" target="_blank" class="waves-effect waves-light btn-floating btn-large left" title="Github"><i class="fa fa-github"></i></a></td>
-                        </tr>
-                    </table>
+                    <img id="favicon" src="{% static "portfolio/img/favicon.png" %}" width=250 alt="picture of me">
                     <br><br>
-                    <div class="down-btn center-align"><a href="#skills"><i class="material-icons arrow arrow-white large grey-text text-lighten-2">expand_more</i></a></div>
+                    <span class="typed white-text"></span>
                 </div>
+                <div class="down-btn center-align"><i class="material-icons arrow arrow-white large grey-text text-lighten-1">expand_more</i></div>
             </div>
 
             <div id="skills" class="section scrollspy container">
@@ -112,30 +95,9 @@
             </div>
         </main>
 
-        <footer class="footer-copyright teal darken-1 white-text center-align">
+        <footer class="footer-copyright grey darken-4 white-text center-align">
             Made with &nbsp;<i class="fa fa-heart red-text text-lighten-2 tooltipped animated infinite pulse" data-position="top" data-delay="0" data-tooltip="Thanks for visiting!"></i>&nbsp; by Charles Zhao
         </footer>
-
-        <div id="info" class="modal modal-fixed-footer">
-            <div class="modal-content">
-                <h4>About This Website</h4>
-                <p>I made this website to gain experience with full-stack development, particularly with <a href="https://www.djangoproject.com/" target="_blank">Django</a>, a Python web framework, as well as <a href="http://materializecss.com/" target="_blank">Materialize</a>, a responsive front-end framework based on Material Design. This website is hosted on an Ubuntu server I set up at home with Gunicorn and Nginx, and much of the content in this website is dynamically generated from a PostgreSQL database (for educational purposes). I made this website using the following frameworks and libraries:</p>
-                <ul>
-                    <li><a href="https://www.djangoproject.com/" target="_blank">Django</a></li>
-                    <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
-                    <li><a href="http://materializecss.com/" target="_blank">Materialize</a></li>
-                    <li><a href="http://fontawesome.io/" target="_blank">Font Awesome</a></li>
-                    <li><a href="http://www.mattboldt.com/demos/typed-js/" target="_blank">Typed.js</a></li>
-                    <li><a href="http://vincentgarreau.com/particles.js/" target="_blank">Particles.js</a></li>
-                    <li><a href="https://scrollrevealjs.org/" target="_blank">ScrollReveal.js</a></li>
-                    <li><a href="http://velocityjs.org/" target="_blank">Velocity.js</a></li>
-                </ul>
-                <p>If you have any suggestions or comments, please email me at <a href="mailto:czhao39@gmail.com" target="_blank">czhao39@gmail.com</a>. Please note that Materialize is still in alpha so there may be bugs in the UI (let me know if you notice any!).</p>
-            </div>
-            <div class="modal-footer">
-                <a class="modal-action modal-close waves-effect btn-flat">Cool!</a>
-            </div>
-        </div>
 
         <!-- Scripts -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>

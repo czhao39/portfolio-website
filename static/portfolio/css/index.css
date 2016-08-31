@@ -2,36 +2,30 @@ body {
     font-weight: 300;
 }
 
-nav {
-    box-shadow: none;
-}
-
-.nav-wrapper {
-    background-color: #4db6ac;
-    box-shadow: none;
+.navbar {
+    position: absolute;
     padding-top: 10px;
-}
-
-nav a.button-collapse {
-    margin-left: 1rem;
+    z-index: 10;
 }
 
 .page-title {
     font-size: 2.5rem;
+    padding-left: 20px;
 }
 
-@media only screen and (min-width: 993px) {
-    nav a.button-collapse {
-        display: initial;
-    }
+.navbar {
+    width: 100%;
+    padding: 40px 5%;
 }
 
-#slide-out .btn-li {
-    margin-top: 5vh;
+.navbar a {
+    color: #bdbdbd;
+    -webkit-transition: color .5s;
+    transition: color .2s;
 }
 
-#info-trigger {
-    margin-right: 15px;
+.navbar a:hover {
+    color: white;
 }
 
 .page-section {
@@ -44,8 +38,7 @@ nav a.button-collapse {
 
 .intro-content {
     position: absolute;
-    top: 130px;
-    bottom: 0;
+    top: 170px;
     left: 0;
     right: 0;
     opacity: 0;
@@ -58,12 +51,12 @@ nav a.button-collapse {
 }
 
 .typed {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 200;
 }
 
 .typed-cursor{
-    font-size: 4rem;
+    font-size: 8rem;
     font-weight: 200;
     opacity: 1;
     color: white;
@@ -90,10 +83,6 @@ nav a.button-collapse {
     100% { opacity:1; }
 }
 
-#summary {
-    font-size: 1.2rem;
-}
-
 .down-btn {
     width: 100%;
     position: absolute;
@@ -106,6 +95,7 @@ nav a.button-collapse {
 }
 
 .arrow-white:hover {
+    cursor: pointer;
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
     color: white !important;
 }
