@@ -2,7 +2,7 @@ $(document).ready(function() {
     $window = $(window);
     $navbar = $(".navbar");
     
-    var height = Math.max(window.innerHeight, $(".intro-content").height()+330);
+    var height = Math.max($window.height(), $(".intro-content").height()+330);
     
     $(".page-section").height(height);
     $("#skills").css("margin-top", height-50);
