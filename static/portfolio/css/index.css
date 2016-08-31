@@ -131,7 +131,7 @@ body {
 
 .table-div td {
     width: 50%;
-    padding: 1rem 5rem;
+    padding: .5rem 4rem;
     white-space: nowrap;
 }
 
@@ -217,7 +217,7 @@ footer {
     .intro-text {font-size: 2.5rem;}
     #intro .typed {font-size: 2rem;}
     #intro .typed-cursor {font-size: 3rem;}
-    .table-div td {padding: 1rem 2rem;}
+    .table-div td {padding: 1rem 1rem;}
     .card {margin: 10px 0;}
     .navbar i {font-size: 1.5rem;}
 }
@@ -227,7 +227,7 @@ footer {
     .intro-text {font-size: 1.5rem;}
     #intro .typed {font-size: 1.3rem;}
     #intro .typed-cursor {font-size: 2rem;}
-    .table-div td {padding: 1rem 1rem;}
+    .table-div td {padding: 1rem .8rem;}
     #contact-btn {margin: 0;}
     .navbar i {font-size: 1.5rem;}
 }

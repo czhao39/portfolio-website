@@ -5,7 +5,7 @@ $(document).ready(function() {
     var height = Math.max(window.innerHeight, $(".intro-content").height()+330);
     
     $(".page-section").height(height);
-    $("#skills").css("margin-top", height);
+    $("#skills").css("margin-top", height-50);
     $(".table-div").scrollLeft(($(".table-div table").width()-$(".table-div").width()) / 2);
 
     $(".typed").typed({
