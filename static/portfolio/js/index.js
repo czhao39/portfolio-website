@@ -2,6 +2,9 @@ $(document).ready(function() {
     $window = $(window);
     $navbar = $(".navbar");
     
+    $(".page-section").height(window.innerHeight);
+    $("#skills").css("margin-top", window.innerHeight);
+    
     $(".typed").typed({
         strings: ["first", "second"],
         typeSpeed: 80,
@@ -20,7 +23,7 @@ $(document).ready(function() {
 
     $navbar.pushpin({top: 50});
     $window.scroll(function() {
-        $navbar.css("background-color", "rgba(69, 90, 100, " + ($window.scrollTop()/50).toString() + ")");
+        $navbar.css("background-color", "rgba(55, 71, 79, " + ($window.scrollTop()/50).toString() + ")");
     });
     $window.scroll();
     
