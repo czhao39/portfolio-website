@@ -157,8 +157,17 @@ body {
     line-height: 1.2;
 }
 
+.card-title .card-name {
+    width: calc(100% - 30px);
+    margin-bottom: 1rem;
+}
+
+.card i {
+    position: absolute;
+    right: 20px;
+}
+
 .card .card-content p {
-    margin-top: .8rem;
     font-size: 1.2rem;
 }
 
