@@ -1,5 +1,6 @@
 body {
     font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .page-title {
@@ -135,7 +136,7 @@ body {
 }
 
 .skill-name {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .divider {
@@ -145,6 +146,18 @@ body {
 
 .card {
     margin: 30px 20px;
+}
+
+.card-content .card-title {
+    font-size: 1.6rem;
+}
+
+.card-content p {
+    font-size: 1.3rem;
+}
+
+.card .card-reveal {
+    padding: 15%;
 }
 
 footer {
