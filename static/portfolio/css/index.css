@@ -54,14 +54,18 @@ body {
     position: absolute;
 }
 
+.intro-text {
+    margin-top: 10%;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
 .typed {
     font-size: 4rem;
-    font-weight: 200;
 }
 
 .typed-cursor{
     font-size: 6rem;
-    font-weight: 200;
     opacity: 1;
     color: white;
     -webkit-animation: blink 0.7s infinite;
