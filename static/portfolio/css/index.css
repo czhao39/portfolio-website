@@ -43,7 +43,7 @@ body {
 
 .intro-content {
     position: absolute;
-    top: 180px;
+    top: 170px;
     left: 0;
     right: 0;
     opacity: 0;
@@ -56,16 +56,17 @@ body {
 }
 
 .intro-text {
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 3rem;
     font-weight: 200;
 }
 
-.typed {
+#intro .typed {
+    font-family: Courier, monospace;
     font-size: 4rem;
 }
 
-.typed-cursor{
+#intro .typed-cursor{
     font-size: 6rem;
     opacity: 1;
     color: white;
@@ -92,7 +93,7 @@ body {
     100% { opacity:1; }
 }
 
-.favicon {
+#intro .favicon {
     max-width: 40%;
     max-height: 40%;
 }
@@ -201,8 +202,8 @@ footer {
 @media (max-width: 640px) and (min-width: 376px) {
     .page-title {font-size: 1.8rem;}
     .intro-text {font-size: 2.5rem;}
-    .typed {font-size: 3rem;}
-    .typed-cursor {font-size: 4rem;}
+    #intro .typed {font-size: 3rem;}
+    #intro .typed-cursor {font-size: 4rem;}
     .table-div td {padding: 1rem 2rem;}
     .card {margin: 10px 0;}
     .navbar i {font-size: 1.5rem;}
@@ -211,8 +212,8 @@ footer {
 @media (max-width: 375px) {
     .page-title {font-size: 1.2rem;}
     .intro-text {font-size: 1.5rem;}
-    .typed {font-size: 2rem;}
-    .typed-cursor {font-size: 3rem;}
+    #intro .typed {font-size: 2rem;}
+    #intro .typed-cursor {font-size: 3rem;}
     .table-div td {padding: 1rem 1rem;}
     #contact-btn {margin: 0;}
     .navbar i {font-size: 1.5rem;}

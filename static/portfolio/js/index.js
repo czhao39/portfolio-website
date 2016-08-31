@@ -18,7 +18,7 @@ $(document).ready(function() {
     
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     
-    $(".intro-content").velocity({top: 140, opacity: 1}, {duration: 1000}, {queue: false});
+    $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 1000}, {queue: false});
 
     $(".arrow-white").click(function() {
         $("body, html").animate({scrollTop: window.innerHeight - $navbar.height()});
