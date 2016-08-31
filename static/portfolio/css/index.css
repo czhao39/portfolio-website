@@ -16,8 +16,8 @@ body {
 
 .navbar a {
     color: #bdbdbd;
-    -webkit-transition: color .5s;
-    transition: color .2s;
+    -webkit-transition: color .4s;
+    transition: color .4s;
 }
 
 .navbar a:hover {
@@ -106,8 +106,8 @@ body {
 }
 
 .arrow {
-    -webkit-transition: text-shadow .5s, color .5s;
-    transition: text-shadow .5s, color .5s;
+    -webkit-transition: text-shadow .4s, color .4s;
+    transition: text-shadow .4s, color .4s;
 }
 
 .arrow-white:hover {
