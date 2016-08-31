@@ -2,18 +2,14 @@ body {
     font-weight: 300;
 }
 
-.navbar {
-    position: absolute;
-    padding-top: 10px;
-    z-index: 10;
-}
-
 .page-title {
     font-size: 2.5rem;
     padding-left: 20px;
 }
 
 .navbar {
+    position: absolute;
+    z-index: 10;
     width: 100%;
     padding: 50px 5% 0 5%;
 }
@@ -30,6 +26,10 @@ body {
 
 .navbar a:hover {
     color: white;
+}
+
+.navbar i {
+    line-height: inherit;
 }
 
 .page-section {
