@@ -57,14 +57,16 @@ body {
 }
 
 .intro-text {
-    margin-top: 5%;
+    margin-top: 3%;
     font-size: 3rem;
     font-weight: 200;
+    line-height: 1;
 }
 
 #intro .typed {
     font-family: Courier, monospace;
     font-size: 3rem;
+    line-height: 1;
 }
 
 #intro .typed-cursor{
