@@ -6,7 +6,8 @@ $(document).ready(function() {
     
     $(".page-section").height(height);
     $("#skills").css("margin-top", height);
-    
+    $(".table-div").scrollLeft(($(".table-div table").width()-$(".table-div").width()) / 2);
+
     $(".typed").typed({
         strings: ["first", "second"],
         typeSpeed: 80,
@@ -31,6 +32,5 @@ $(document).ready(function() {
     
     var sr = ScrollReveal();
     sr.reveal(".section", {duration: 1000});
-    sr.reveal("#skills tr", {duration: 1000});
     sr.reveal(".card", {duration: 1000});
 });
