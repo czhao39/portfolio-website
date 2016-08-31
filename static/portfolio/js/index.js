@@ -9,15 +9,15 @@ $(document).ready(function() {
     
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     
-    $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 1000}, {queue: false});
+    $(".intro-content").velocity({top: 140, opacity: 1}, {duration: 1000}, {queue: false});
 
     $(".arrow-white").click(function() {
         $("body, html").animate({scrollTop: window.innerHeight});
     });
 
+    $navbar = $(".navbar");
+    $navbar.pushpin({top: 50});
     $window = $(window);
-    $nav_wrapper = $(".nav-wrapper");
-    $nav = $("nav");
     $page_title = $(".page-title");
     var is_dark = false;
     /*$window.scroll(function() {

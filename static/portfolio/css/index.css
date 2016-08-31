@@ -15,7 +15,13 @@ body {
 
 .navbar {
     width: 100%;
-    padding: 40px 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 50px;
+}
+
+.navbar.pinned {
+    margin-top: 0;
 }
 
 .navbar a {
@@ -38,7 +44,7 @@ body {
 
 .intro-content {
     position: absolute;
-    top: 170px;
+    top: 180px;
     left: 0;
     right: 0;
     opacity: 0;
