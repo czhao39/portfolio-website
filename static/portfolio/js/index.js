@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $window = $(window);
+    $navbar = $(".navbar");
+    
     $(".typed").typed({
         strings: ["first", "second"],
         typeSpeed: 80,
@@ -12,12 +15,10 @@ $(document).ready(function() {
     $(".intro-content").velocity({top: 140, opacity: 1}, {duration: 1000}, {queue: false});
 
     $(".arrow-white").click(function() {
-        $("body, html").animate({scrollTop: window.innerHeight});
+        $("body, html").animate({scrollTop: window.innerHeight - $navbar.height()});
     });
 
-    $navbar = $(".navbar");
     $navbar.pushpin({top: 50});
-    $window = $(window);
     $window.scroll(function() {
         $navbar.css("background-color", "rgba(69, 90, 100, " + ($window.scrollTop()/50).toString() + ")");
     });
