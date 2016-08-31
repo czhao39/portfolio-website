@@ -2,8 +2,10 @@ $(document).ready(function() {
     $window = $(window);
     $navbar = $(".navbar");
     
-    $(".page-section").height(window.innerHeight);
-    $("#skills").css("margin-top", window.innerHeight);
+    var height = Math.max(window.innerHeight, $(".intro-content").height()+330);
+    
+    $(".page-section").height(height);
+    $("#skills").css("margin-top", height);
     
     $(".typed").typed({
         strings: ["first", "second"],
