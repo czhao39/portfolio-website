@@ -148,16 +148,15 @@ body {
     margin: 30px 20px;
 }
 
-.card-content .card-title {
+.card .card-content .card-title {
     font-size: 1.6rem;
+    line-height: 1.2;
 }
 
-.card-content p {
+.card .card-content p {
+    margin-top: .8rem;
     font-size: 1.3rem;
-}
-
-.card .card-reveal {
-    padding: 15%;
+    line-height: 1.2;
 }
 
 footer {

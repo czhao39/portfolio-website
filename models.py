@@ -2,12 +2,15 @@ from django.db import models
 
 
 class Project(models.Model):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=30)
     year = models.PositiveSmallIntegerField()
-    image = models.ImageField(upload_to="project_images/")
+    image = models.ImageField(upload_to="portfolio/static/portfolio/img/project_images/")
     summary = models.CharField(max_length=50)
     details = models.TextField()
 
+    @property
+    def im_name(self):
+        return self.image.url[self.image.url.rfind("/")+1:]
 
     def __str__(self):
         return self.name
