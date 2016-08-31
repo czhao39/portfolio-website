@@ -1,6 +1,6 @@
 body {
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .page-title {
@@ -159,8 +159,7 @@ body {
 
 .card .card-content p {
     margin-top: .8rem;
-    font-size: 1.3rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
 }
 
 footer {
