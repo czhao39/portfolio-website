@@ -9,7 +9,7 @@ $(document).ready(function() {
     $(".table-div").scrollLeft(($(".table-div table").width()-$(".table-div").width()) / 2);
 
     $(".typed").typed({
-        strings: ["first", "second"],
+        strings: ["full-stack developer", "algorithmist", "roboticist", "stock trader", "inquirer"],
         typeSpeed: 80,
         backSpeed: 60,
         backDelay: 1000,
