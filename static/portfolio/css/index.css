@@ -136,6 +136,10 @@ body {
     white-space: nowrap;
 }
 
+.table-div i {
+    line-height: inherit;
+}
+
 .skill-name {
     font-size: 1.4rem;
 }
@@ -231,17 +235,17 @@ footer {
     }
 }
 
-@media (max-width: 992px) and (min-width: 376px) {
+@media (max-width: 992px) and (min-width: 601px) {
     #intro .typed {font-size: 3em;}
     #intro .typed-cursor {font-size: 4em;}
 }
 
-@media (max-width: 640px) and (min-width: 376px) {
+@media (max-width: 600px) and (min-width: 376px) {
     .page-title {font-size: 1.8rem;}
     .intro-text {font-size: 2.5rem;}
     #intro .typed {font-size: 2rem;}
     #intro .typed-cursor {font-size: 3rem;}
-    .table-div td {padding: 1rem 1rem;}
+    .table-div td {width: auto; padding: .5rem 1rem;}
     .card {margin: 10px 0;}
     .navbar {line-height: 40px;}
     .navbar i {font-size: 1.5rem;}
@@ -252,7 +256,7 @@ footer {
     .intro-text {font-size: 1.5rem;}
     #intro .typed {font-size: 1.3rem;}
     #intro .typed-cursor {font-size: 2rem;}
-    .table-div td {padding: 1rem .8rem;}
+    .table-div td {width: auto; padding: .5rem 1rem;}
     #contact-btn {margin: 0;}
     .navbar {line-height: 40px;}
     .navbar i {font-size: 1.5rem;}
