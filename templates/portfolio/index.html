@@ -34,7 +34,7 @@
                 <div class="navbar">
                     <a class="page-title left white-text">H. Charles Zhao</a>
                     <ul class="right">
-                        <li><a href="{% static "portfolio/resume.pdf" %}" target="_blank" title="Resume"><i class="fa fa-file-text-o fa-2x"></i></a></li>
+                        <li><a href="{% static "portfolio/resume.pdf" %}" target="_blank" title="Résumé"><i class="fa fa-file-text-o fa-2x"></i></a></li>
                         <li><a href="mailto:czhao39@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope-o fa-2x"></i></a></li>
                         <li><a href="https://github.com/czhao39" target="_blank" title="Github"><i class="fa fa-github fa-2x"></i></a></li>
                     </ul>
@@ -84,7 +84,7 @@
                     <div class="col s10 offset-s1 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="{% static "portfolio/img/project_images/" %}{{ project.im_name }}">
+                                <img class="activator" src="{% static "portfolio/img/project_images/" %}{{ project.im_name }}" alt="{{ project.im_name }}">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4"><span class="card-name activator">{{ project.name }}</span><i class="material-icons right">expand_less</i></span>
