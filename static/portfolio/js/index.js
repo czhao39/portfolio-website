@@ -21,7 +21,7 @@ $(document).ready(function() {
     $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 1000}, {queue: false});
 
     $("#intro .arrow").click(function() {
-        $("body, html").animate({scrollTop: window.innerHeight - $navbar.height()});
+        $("body, html").animate({scrollTop: height-50});
     });
 
     $navbar.pushpin({top: 50});
