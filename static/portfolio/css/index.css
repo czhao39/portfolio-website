@@ -5,18 +5,20 @@ body {
 
 .page-title {
     font-size: 2.5rem;
+    padding-top: 6px;
 }
 
 .navbar {
     position: absolute;
     z-index: 10;
     width: 100%;
-    padding: 55px 5% 0 5%;
-    line-height: 50px;
+    padding: 50px 5% 0 5%;
+    line-height: 45px;
 }
 
 .navbar a {
     color: #bdbdbd;
+    padding-top: 6px;
     -webkit-transition: color .4s;
     transition: color .4s;
 }
@@ -31,7 +33,7 @@ body {
 }
 
 .navbar.pinned {
-    padding-top: 5px;
+    padding-top: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
