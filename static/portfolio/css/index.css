@@ -110,19 +110,14 @@ body {
 }
 
 .arrow {
+    cursor: pointer;
     -webkit-transition: text-shadow .4s, color .4s;
     transition: text-shadow .4s, color .4s;
 }
 
-.arrow-white:hover {
-    cursor: pointer;
+.arrow:hover {
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
     color: white !important;
-}
-
-.arrow-black:hover {
-    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
-    color: black !important;
 }
 
 .table-div {
@@ -160,12 +155,21 @@ body {
 .card-title .card-name {
     display: inline-block;
     width: calc(100% - 30px);
+}
+
+.card-reveal .card-title .card-name {
     cursor: default;
 }
 
 .card i {
     position: absolute;
     right: 20px;
+    -webkit-transition: text-shadow .4s;
+    transition: text-shadow .4s;
+}
+
+.card i:hover {
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
 }
 
 .card .card-content p {

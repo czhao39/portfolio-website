@@ -20,7 +20,7 @@ $(document).ready(function() {
     
     $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 1000}, {queue: false});
 
-    $(".arrow-white").click(function() {
+    $("#intro .arrow").click(function() {
         $("body, html").animate({scrollTop: window.innerHeight - $navbar.height()});
     });
 
