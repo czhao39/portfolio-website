@@ -126,7 +126,7 @@ body {
     color: white !important;
 }
 
-.section, .card {
+h2.center-align, .table-div, .card {
     visibility: hidden;
 }
 

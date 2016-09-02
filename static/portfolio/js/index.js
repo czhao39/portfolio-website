@@ -34,6 +34,5 @@ $(document).ready(function() {
     $window.scroll();
     
     var sr = ScrollReveal();
-    sr.reveal(".section", {duration: 1000});
-    sr.reveal(".card", {duration: 1000});
+    sr.reveal("h2.center-align, .table-div, .card", {duration: 1000});
 });
