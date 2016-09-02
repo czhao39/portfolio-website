@@ -63,7 +63,7 @@ body {
 }
 
 .intro-text {
-    margin-top: 3%;
+    margin-top: 5%;
     font-size: 3rem;
     font-weight: 200;
     line-height: 1;
@@ -126,6 +126,7 @@ body {
 
 .table-div {
     overflow-x: auto;
+    margin-bottom: 20px;
 }
 
 #skills {
@@ -237,12 +238,12 @@ footer {
     }
 }
 
-@media (max-width: 992px) and (min-width: 601px) {
+@media (max-width: 992px) and (min-width: 641px) {
     #intro .typed {font-size: 3em;}
     #intro .typed-cursor {font-size: 4em;}
 }
 
-@media (max-width: 600px) and (min-width: 376px) {
+@media (max-width: 640px) and (min-width: 376px) {
     .page-title {font-size: 1.8rem;}
     .intro-text {font-size: 2.5rem;}
     #intro .typed {font-size: 2rem;}
