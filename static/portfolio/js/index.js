@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 
     $("#intro .arrow").click(function() {
-        $("body, html").animate({scrollTop: height});
+        $("html").velocity("scroll", {offset: height, duration: 400});
     });
 
     $navbar.pushpin({top: 50});
