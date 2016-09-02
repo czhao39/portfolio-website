@@ -18,7 +18,11 @@ $(document).ready(function() {
     
     particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     
-    $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 1000}, {queue: false});
+    $(".navbar").velocity({top: 0, opacity: 1}, {duration: 600, complete: function() { $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 600}); }});
+    // simultaneous animation
+    // $(".navbar").velocity({top: 0, opacity: 1}, {duration: 600});
+    // $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 600});
+
 
     $("#intro .arrow").click(function() {
         $("body, html").animate({scrollTop: height-50});
