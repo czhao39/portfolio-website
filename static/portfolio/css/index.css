@@ -10,10 +10,9 @@ body {
 
 .navbar {
     position: absolute;
-    top: -20px;
     opacity: 0;
     width: 100%;
-    padding: 50px 5% 0 5%;
+    padding: 30px 5% 0 5%;
     line-height: 45px;
     z-index: 10;
 }
@@ -112,7 +111,8 @@ body {
 .down-btn {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
+    opacity: 0;
 }
 
 .arrow {
