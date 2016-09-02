@@ -20,7 +20,8 @@ $(document).ready(function() {
     //$(".navbar").velocity({top: 0, opacity: 1}, {duration: 600});
     //$(".down-btn").velocity({bottom: 0, opacity: 1}, {duration: 600, complete: function() { $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 600}); }});
     $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 600, complete: function() {
-        $(".navbar").velocity({top: 20, opacity: 1}, {duration: 600});
+        $navbar.css("top", "-20px");
+        $navbar.velocity({top: 0, opacity: 1}, {duration: 600});
         $(".down-btn").velocity({bottom: 0, opacity: 1}, {duration: 600});
     }});
     // simultaneous animation
