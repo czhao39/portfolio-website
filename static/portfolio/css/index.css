@@ -124,6 +124,10 @@ body {
     color: white !important;
 }
 
+.section, .card {
+    visibility: hidden;
+}
+
 .table-div {
     overflow-x: auto;
     margin-bottom: 20px;
