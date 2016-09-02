@@ -5,8 +5,7 @@ $(document).ready(function() {
     var height = Math.max($window.height(), $(".intro-content").height()+330);
     
     $(".page-section").height(height);
-    $("#skills").css("margin-top", height-50);
-    $(".table-div").scrollLeft(($(".table-div table").width()-$(".table-div").width()) / 2);
+    $("#skills").css("margin-top", height);
 
     $(".typed").typed({
         strings: ["full-stack developer", "algorithmist", "roboticist", "stock trader", "inquirer"],
@@ -25,7 +24,7 @@ $(document).ready(function() {
 
 
     $("#intro .arrow").click(function() {
-        $("body, html").animate({scrollTop: height-50});
+        $("body, html").animate({scrollTop: height});
     });
 
     $navbar.pushpin({top: 50});
