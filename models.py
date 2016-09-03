@@ -25,12 +25,6 @@ class Skill(models.Model):
     proficiency = models.PositiveSmallIntegerField(choices=((1, 1), (2, 2), (3, 3), (4, 4), (5, 5)))
     category = models.PositiveSmallIntegerField(choices=((1, "General-purpose"), (2, "Web"), (3, "Other")))
 
-    
-    @property
-    def stars_list(self):
-        return list(range(5))
-
-
     def __str__(self):
         return self.name
 
