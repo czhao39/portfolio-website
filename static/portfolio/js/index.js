@@ -28,7 +28,6 @@ $(document).ready(function() {
     // $(".navbar").velocity({top: 0, opacity: 1}, {duration: 600});
     // $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 600});
 
-
     $("#intro .arrow").click(function() {
         $("html").velocity("scroll", {offset: height, duration: 400});
     });

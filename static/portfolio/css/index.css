@@ -179,20 +179,31 @@ h2.center-align, .table-div, .card {
     cursor: default;
 }
 
-.card i {
+.card:not(.more-to-come) i {
     position: absolute;
     right: 20px;
     -webkit-transition: text-shadow .4s;
     transition: text-shadow .4s;
 }
 
-.card i:hover {
+.card:not(.more-to-come) i:hover {
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
 }
 
 .card .card-content p {
     font-size: 1.2rem;
-    margin-top: 1em;
+    margin-top: 1rem;
+}
+
+.more-to-come div {
+    margin: auto;
+    font-size: 2rem;
+}
+
+.more-to-come .fa-code {
+    margin-top: -6px;
+    margin-left: 3px;
+    font-size: 30px;
 }
 
 footer {
@@ -248,8 +259,8 @@ footer {
 }
 
 @media (max-width: 992px) and (min-width: 641px) {
-    #intro .typed {font-size: 3em;}
-    #intro .typed-cursor {font-size: 4em;}
+    #intro .typed {font-size: 3rem;}
+    #intro .typed-cursor {font-size: 4rem;}
 }
 
 @media (max-width: 640px) and (min-width: 376px) {

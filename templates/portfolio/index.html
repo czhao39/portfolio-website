@@ -96,6 +96,19 @@
                         </div>
                     </div>
                     {% endfor %}
+                    {% if not project_list|length|divisibleby:2 %}
+                    <div class="col s12 m6 l4">
+                        <div class="more-to-come card medium valign-wrapper blue-grey lighten-4">
+                            <div class="valign center-align">
+                                <p>More to come!</p>
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-laptop fa-stack-2x"></i>
+                                    <i class="fa fa-code fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </main>
