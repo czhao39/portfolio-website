@@ -15,18 +15,16 @@ $(document).ready(function() {
         loop: true,
     });
     
-    particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
+    if ($window.width() <= 640)
+        particlesJS.load("particles-js", "/static/portfolio/particlesjs-config-mobile.json");
+    else
+        particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     
-    //$(".navbar").velocity({top: 0, opacity: 1}, {duration: 600});
-    //$(".down-btn").velocity({bottom: 0, opacity: 1}, {duration: 600, complete: function() { $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 600}); }});
     $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 600, complete: function() {
         $navbar.css("top", "-20px");
         $navbar.velocity({top: 0, opacity: 1}, {duration: 600});
         $(".down-btn").velocity({bottom: 0, opacity: 1}, {duration: 600});
     }});
-    // simultaneous animation
-    // $(".navbar").velocity({top: 0, opacity: 1}, {duration: 600});
-    // $(".intro-content").velocity({top: 130, opacity: 1}, {duration: 600});
 
     $("#intro .arrow").click(function() {
         $("html").velocity("scroll", {offset: height, duration: 400});
