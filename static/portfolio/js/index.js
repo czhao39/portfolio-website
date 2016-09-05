@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     $navbar.pushpin({top: 50});
     $window.scroll(function() {
-        $navbar.css("background-color", "rgba(55, 71, 79, " + ($window.scrollTop()/50).toString() + ")");
+        $navbar.css("background-color", "rgba(55, 71, 79, " + ($window.scrollTop()/height).toString() + ")");
     });
     $window.scroll();
     
