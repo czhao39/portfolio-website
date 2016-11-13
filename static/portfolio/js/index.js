@@ -20,7 +20,8 @@ $(document).ready(function() {
     else
         particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
     
-    $(".intro-content").velocity({top: 100, opacity: 1}, {duration: 600, complete: function() {
+    var new_top = $window.width() <= 640 ? 120 : 100;
+    $(".intro-content").velocity({top: new_top, opacity: 1}, {duration: 600, complete: function() {
         $navbar.css("top", "-20px");
         $navbar.velocity({top: 0, opacity: 1}, {duration: 600});
         $(".down-btn").velocity({bottom: 0, opacity: 1}, {duration: 600});

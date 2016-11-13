@@ -265,6 +265,7 @@ footer {
 @media (max-width: 640px) and (min-width: 376px) {
     .page-title {font-size: 1.8rem;}
     .intro-text {font-size: 2.5rem;}
+    .intro-content {top: 150px;}
     #intro .typed {font-size: 2rem;}
     #intro .typed-cursor {font-size: 3rem;}
     .table-div td {width: auto; padding: .5rem 1rem;}
@@ -276,6 +277,7 @@ footer {
 @media (max-width: 375px) {
     .page-title {font-size: 1.2rem;}
     .intro-text {font-size: 1.5rem;}
+    .intro-content {top: 150px;}
     #intro .typed {font-size: 1.3rem;}
     #intro .typed-cursor {font-size: 2rem;}
     .table-div td {width: auto; padding: .5rem 1rem;}
