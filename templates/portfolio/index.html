@@ -63,9 +63,9 @@
                             <td class="left">
                                 {% for star in "01234" %}
                                 {% if star|add:0 < skill.proficiency %}
-                                <i class="material-icons">brightness_1</i>&nbsp;
+                                <i class="fa fa-circle"></i>&nbsp;
                                 {% else %}
-                                <i class="material-icons">radio_button_unchecked</i>&nbsp;
+                                <i class="fa fa-circle-o"></i>&nbsp;
                                 {% endif %}
                                 {% endfor %}
                             </td>

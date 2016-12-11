@@ -143,16 +143,17 @@ h2.center-align, .table-div, .card {
 
 .table-div td {
     width: 50%;
-    padding: .5rem 4rem;
+    padding: .4rem 4rem;
     white-space: nowrap;
 }
 
 .table-div i {
+    font-size: 1.5rem;
     line-height: inherit;
 }
 
 .skill-name {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .divider {
