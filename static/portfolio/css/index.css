@@ -19,6 +19,7 @@ body {
 }
 
 .navbar a {
+    font-family: "Lato", "Roboto", sans-serif;
     color: #bdbdbd;
     padding-top: 6px;
     -webkit-transition: color .4s;
