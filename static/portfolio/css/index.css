@@ -4,7 +4,7 @@ body {
 }
 
 .page-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding-top: 6px;
 }
 
@@ -14,7 +14,7 @@ body {
     opacity: 0;
     width: 100%;
     padding: 50px 5% 0 5%;
-    line-height: 45px;
+    line-height: 40px;
     z-index: 10;
 }
 
@@ -31,6 +31,7 @@ body {
 }
 
 .navbar i {
+    font-size: 1.7rem;
     display: initial;
     line-height: inherit;
 }
@@ -68,19 +69,19 @@ body {
 
 .intro-text {
     margin-top: 5%;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 200;
     line-height: 1;
 }
 
 #intro .typed {
     font-family: "Roboto Mono", monospace;
-    font-size: 4rem;
-    line-height: 1;
+    font-size: 3.3rem;
+    line-height: 3;
 }
 
 #intro .typed-cursor{
-    font-size: 6rem;
+    font-size: 4.5rem;
     opacity: 1;
     color: white;
     -webkit-animation: blink 0.7s infinite;
@@ -149,7 +150,7 @@ h2.center-align, .table-div, .card {
 }
 
 .table-div i {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: inherit;
 }
 
@@ -159,11 +160,11 @@ h2.center-align, .table-div, .card {
 
 .divider {
     width: 80%;
-    margin: 20px auto 0 auto;
+    margin: 30px auto 10px auto;
 }
 
 .card {
-    margin: 30px 20px;
+    margin: 10px 0;
 }
 
 .card .card-content .card-title, .card .card-reveal .card-title {
@@ -208,8 +209,7 @@ h2.center-align, .table-div, .card {
 }
 
 footer {
-    font-size: 1.2rem;
-    padding: 10px;
+    padding: 5px;
 }
 
 .animated {
@@ -259,33 +259,28 @@ footer {
     }
 }
 
-@media (max-width: 992px) and (min-width: 641px) {
+@media (max-width: 992px) {
     .intro-content {top: 140px;}
-    #intro .typed {font-size: 3.5rem; line-height: 3;}
-    #intro .typed-cursor {font-size: 4rem;}
 }
 
 @media (max-width: 640px) and (min-width: 376px) {
-    .page-title {font-size: 1.8rem;}
-    .intro-text {font-size: 2.5rem;}
-    .intro-content {top: 140px;}
-    #intro .typed {font-size: 2.5rem; line-height: 3;}
-    #intro .typed-cursor {font-size: 3rem;}
-    .table-div td {width: auto; padding: .5rem 1rem;}
-    .card {margin: 10px 0;}
     .navbar {line-height: 40px;}
     .navbar i {font-size: 1.5rem;}
+    .page-title {font-size: 1.8rem;}
+    .intro-text {font-size: 2.5rem;}
+    #intro .typed {font-size: 2.5rem;}
+    #intro .typed-cursor {font-size: 3rem;}
+    .table-div td {width: auto; padding: .5rem 1rem;}
 }
 
 @media (max-width: 375px) {
+    .navbar {line-height: 40px;}
+    .navbar i {font-size: 1.5rem;}
     .page-title {font-size: 1.3rem;}
     .navbar a {padding: 0 12px;}
     .intro-text {font-size: 1.9rem;}
-    .intro-content {top: 140px;}
-    #intro .typed {font-size: 1.9rem; line-height: 3;}
+    #intro .typed {font-size: 1.9rem;}
     #intro .typed-cursor {font-size: 2.5rem;}
     .table-div td {width: auto; padding: .5rem 1rem;}
-    #contact-btn {margin: 0;}
-    .navbar {line-height: 40px;}
-    .navbar i {font-size: 1.5rem;}
+    .card {margin: 20px 5%;}
 }
