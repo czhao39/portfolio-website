@@ -273,6 +273,10 @@ footer {
     .table-div td {width: auto; padding: .5rem 1rem;}
 }
 
+@media (max-width: 600px) and (min-width: 376px) {
+    .card {margin: 20px 10%;}
+}
+
 @media (max-width: 375px) {
     .navbar {line-height: 40px;}
     .navbar i {font-size: 1.5rem;}
