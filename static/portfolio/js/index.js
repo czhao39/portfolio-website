@@ -16,9 +16,9 @@ $(document).ready(function() {
     });
     
     if ($window.width() <= 640)
-        particlesJS.load("particles-js", "/static/portfolio/particlesjs-config-mobile.json");
+        particlesJS.load("particles-js", "/static/portfolio/js/particlesjs-config-mobile.json");
     else
-        particlesJS.load("particles-js", "/static/portfolio/particlesjs-config.json");
+        particlesJS.load("particles-js", "/static/portfolio/js/particlesjs-config.json");
     
     var new_top = $window.width() <= 992 ? 120 : 100;
     $(".intro-content").velocity({top: new_top, opacity: 1}, {duration: 800, complete: function() {
