@@ -130,8 +130,28 @@ body {
     color: white !important;
 }
 
-h2.center-align, .table-div, .card {
+.table-div, .card {
     visibility: hidden;
+}
+
+h2.center-align {
+    padding-bottom: 3px;
+}
+
+h2.center-align:after {
+    content: '';
+    display: block;
+    margin: 5px auto;
+    height: 3px;
+    width: 0;
+    background-color: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.underline:after {
+    width: 15rem !important;
+    max-width: 80%;
+    background-color: black !important;
 }
 
 .table-div {

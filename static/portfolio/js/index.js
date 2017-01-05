@@ -5,7 +5,7 @@ $(document).ready(function() {
     var height = Math.max($window.height(), $(".intro-content").height()+330);
     
     $(".page-section").height(height);
-    $("#skills").css("margin-top", height);
+    $("#skills").css("margin-top", height+10);
 
     $(".typed").typed({
         strings: ["web developer", "algorithmist", "roboticist", "inquirer"],
@@ -36,7 +36,17 @@ $(document).ready(function() {
         $navbar.css("background-color", "rgba(55, 71, 79, " + ($window.scrollTop()/height).toString() + ")");
     });
     $window.scroll();
-    
+
+    var options = [
+        {selector: "#skills h2.center-align", offset: 100, callback: underline},
+        {selector: "#projects h2.center-align", offset: 100, callback: underline}
+    ];
+    Materialize.scrollFire(options);  // underline section titles on scroll into view
+
     var sr = ScrollReveal();
-    sr.reveal("h2.center-align, .table-div, .card", {duration: 1000});
+    sr.reveal(".table-div, .card", {duration: 1000});
 });
+
+function underline(el) {
+    $(el).addClass("underline");
+}
