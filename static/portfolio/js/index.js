@@ -44,7 +44,7 @@ $(document).ready(function() {
     Materialize.scrollFire(options);  // underline section titles on scroll into view
 
     var sr = ScrollReveal();
-    sr.reveal(".table-div, .card", {duration: 1000});
+    sr.reveal(".table-div, .card", {viewFactor: 0.1, duration: 1000});
 });
 
 function underline(el) {
