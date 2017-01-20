@@ -149,7 +149,7 @@ h2.center-align:after {
 }
 
 .underline:after {
-    width: 15rem !important;
+    width: 20rem !important;
     max-width: 80%;
     background-color: black !important;
 }
