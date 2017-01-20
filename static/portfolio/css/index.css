@@ -165,17 +165,13 @@ h2.center-align:after {
 
 .table-div td {
     width: 50%;
-    padding: .4rem 4rem;
+    padding: .3rem 2rem;
     white-space: nowrap;
 }
 
 .table-div i {
     font-size: 1.3rem;
     line-height: inherit;
-}
-
-.skill-name {
-    font-size: 1.2rem;
 }
 
 .divider {
@@ -290,7 +286,7 @@ footer {
     .intro-text {font-size: 2.5rem;}
     #intro .typed {font-size: 2.5rem;}
     #intro .typed-cursor {font-size: 3rem;}
-    .table-div td {width: auto; padding: .5rem 1rem;}
+    .table-div td {width: auto; padding: .3rem 1rem;}
 }
 
 @media (max-width: 600px) and (min-width: 376px) {
@@ -305,6 +301,6 @@ footer {
     .intro-text {font-size: 1.9rem;}
     #intro .typed {font-size: 1.9rem;}
     #intro .typed-cursor {font-size: 2.5rem;}
-    .table-div td {width: auto; padding: .5rem 1rem;}
+    .table-div td {width: auto; padding: .3rem 1rem;}
     .card {margin: 20px 5%;}
 }
