@@ -21,7 +21,7 @@ body {
 .navbar a {
     font-family: "Lato", "Roboto", sans-serif;
     color: #bdbdbd;
-    padding-top: 6px;
+    padding-top: 3px;
     -webkit-transition: color .4s;
     transition: color .4s;
 }
@@ -200,12 +200,14 @@ h2.center-align:after {
 .card:not(.more-to-come) i {
     position: absolute;
     right: 20px;
-    -webkit-transition: text-shadow .4s;
-    transition: text-shadow .4s;
+    color: #555555;
+    -webkit-transition: color .4s, text-shadow .4s;
+    transition: color .4s, text-shadow .4s;
 }
 
 .card:not(.more-to-come) i:hover {
-    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
+    color: black;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card .card-content p {
