@@ -186,6 +186,7 @@ h2.center-align:after {
 
 .card {
     margin: 10px 0;
+    height: 350px;
 }
 
 .card .card-content .card-title, .card .card-reveal .card-title {

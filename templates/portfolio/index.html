@@ -34,7 +34,7 @@
             ga('send', 'pageview');
         </script>
     </head>
-    
+
     <body>
         <header>
             <nav>
@@ -83,13 +83,13 @@
             </div>
 
             <div class="divider"></div>
-        
+
             <div id="projects" class="section container">
                 <h2 class="center-align">Projects</h2>
                 <div class="row">
                     {% for project in project_list %}
                     <div class="col s12 m6 l4">
-                        <div class="card medium">
+                        <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="{% static "portfolio/img/project_images/" %}{{ project.im_name }}" alt="{{ project.im_name }}">
                             </div>
@@ -123,6 +123,6 @@
 
         <footer class="footer-copyright blue-grey darken-3 white-text center-align">
             Made with &nbsp;<i class="fa fa-heart red-text text-lighten-2 tooltipped animated infinite pulse" data-position="top" data-delay="0" data-tooltip="Thanks for visiting!"></i>&nbsp; by Charles Zhao
-        </footer>     
+        </footer>
     </body>
 </html>
