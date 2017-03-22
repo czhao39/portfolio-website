@@ -8,7 +8,7 @@ $(document).ready(function() {
     $("#skills").css("margin-top", height+10);
 
     $(".typed").typed({
-        strings: ["web developer", "algorithmist", "roboticist", "inquirer"],
+        strings: ["roboticist", "algorithmist", "web developer", "inquirer"],
         typeSpeed: 80,
         backSpeed: 60,
         backDelay: 1000,
