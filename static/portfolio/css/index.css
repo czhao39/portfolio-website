@@ -65,7 +65,7 @@ body {
 
 .intro-content {
     position: absolute;
-    top: 120px;
+    top: 28%;
     left: 0;
     right: 0;
     opacity: 0;
@@ -288,9 +288,9 @@ footer {
     }
 }
 
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
     .intro-content {top: 140px;}
-}
+}*/
 
 @media (max-width: 640px) and (min-width: 376px) {
     .navbar {line-height: 40px;}
