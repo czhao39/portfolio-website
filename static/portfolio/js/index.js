@@ -57,6 +57,6 @@ function loadProgress() {
         var $el = $(this);
         $el.width(0);
         $el.css("visibility", "visible");
-        $el.velocity({width: the_width}, {duration: 400, easing: "easeOutSine"});
+        $el.velocity({width: the_width}, {duration: 1000, easing: "easeOutCubic"});
     });
 }
