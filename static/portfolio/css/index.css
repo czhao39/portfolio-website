@@ -268,7 +268,7 @@ footer {
     animation-iteration-count: infinite;
 }
 
-.pulse {
+.pulsing {
     -webkit-animation-name: pulse;
     animation-name: pulse;
 }
