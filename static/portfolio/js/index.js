@@ -53,8 +53,8 @@ function underline(el) {
 
 function loadProgress() {
     $("#skills .determinate").each(function() {
+        var the_width = this.style.width;
         var $el = $(this);
-        var the_width = $el.width();
         $el.width(0);
         $el.css("visibility", "visible");
         $el.velocity({width: the_width}, {duration: 400, easing: "easeOutSine"});
