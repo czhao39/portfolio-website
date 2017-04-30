@@ -64,7 +64,7 @@
                 <h2 class="center-align">Skills</h2>
                 <div class="table-div">
                     {% for category in skillcategory_list %}
-                    <h4>{{ category.name }}</h4>
+                    <h5>{{ category.name }}</h5>
                     <table class="striped skill-table">
                         {% for skill in category.skill_set.all %}
                         <tr>
