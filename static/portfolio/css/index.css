@@ -161,7 +161,8 @@ h2.center-align:after {
 
 .table-div {
     overflow-x: auto;
-    margin-bottom: 20px;
+    margin: auto auto 20px auto;
+    width: 90%;
 }
 
 #skills {
@@ -185,11 +186,6 @@ div.progress {
     visibility: hidden;
     background-color: #ffc107;
     transition-property: none;
-}
-
-.table-div i {
-    font-size: 1.3rem;
-    line-height: inherit;
 }
 
 .divider {
