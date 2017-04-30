@@ -38,14 +38,25 @@ $(document).ready(function() {
 
     var options = [
         {selector: "#skills h2.center-align", offset: 100, callback: underline},
-        {selector: "#projects h2.center-align", offset: 100, callback: underline}
+        {selector: "#projects h2.center-align", offset: 100, callback: underline},
+        {selector: "#skills .table-div", offset: 100, callback: loadProgress}
     ];
     Materialize.scrollFire(options);  // underline section titles on scroll into view
 
     var sr = ScrollReveal();
-    sr.reveal(".table-div, .card", {viewFactor: 0.1, duration: 1000});
+    sr.reveal(".card", {viewFactor: 0.1, duration: 1000});
 });
 
 function underline(el) {
     $(el).addClass("underline");
+}
+
+function loadProgress() {
+    $("#skills .determinate").each(function() {
+        var $el = $(this);
+        var the_width = $el.width();
+        $el.width(0);
+        $el.css("visibility", "visible");
+        $el.velocity({width: the_width}, {duration: 400, easing: "easeOutSine"});
+    });
 }

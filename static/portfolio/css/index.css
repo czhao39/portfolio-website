@@ -135,7 +135,7 @@ body {
     color: white !important;
 }
 
-.table-div, .card {
+.card {
     visibility: hidden;
 }
 
@@ -182,7 +182,9 @@ div.progress {
 }
 
 .progress .determinate {
+    visibility: hidden;
     background-color: #ffc107;
+    transition-property: none;
 }
 
 .table-div i {
