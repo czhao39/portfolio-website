@@ -22,7 +22,7 @@ class Project(models.Model):
 
 class Skill(models.Model):
     name = models.CharField(max_length=20)
-    proficiency = models.PositiveSmallIntegerField(choices=((1, 1), (2, 2), (3, 3), (4, 4), (5, 5)))
+    proficiency = models.PositiveSmallIntegerField(help_text="0-100")
     category = models.PositiveSmallIntegerField(choices=((1, "General-purpose"), (2, "Web"), (3, "Other")))
 
     def __str__(self):

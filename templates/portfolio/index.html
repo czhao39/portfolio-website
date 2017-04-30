@@ -67,14 +67,10 @@
                         {% for skill in skill_list %}
                         <tr>
                             <td><span class="right skill-name">{{ skill.name }}</span></td>
-                            <td class="left">
-                                {% for star in "01234" %}
-                                {% if star|add:0 < skill.proficiency %}
-                                <i class="fa fa-circle"></i>&nbsp;
-                                {% else %}
-                                <i class="fa fa-circle-o"></i>&nbsp;
-                                {% endif %}
-                                {% endfor %}
+                            <td>
+                                <div class="progress">
+                                    <div class="determinate" style="width:{{ skill.proficiency }}%"></div>
+                                </div>
                             </td>
                         </tr>
                         {% endfor %}
