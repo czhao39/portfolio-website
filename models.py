@@ -20,10 +20,24 @@ class Project(models.Model):
         ordering = ["-year", "name"]
 
 
+class SkillCategory(models.Model):
+    name = models.CharField(max_length=20)
+    rank = models.AutoField(primary_key=True)
+
+    def __str__(self):
+        return self.name
+
+
+    class Meta:
+        verbose_name = "skill category"
+        verbose_name_plural = "skill categories"
+        ordering = ["rank"]
+
+
 class Skill(models.Model):
     name = models.CharField(max_length=20)
     proficiency = models.PositiveSmallIntegerField(help_text="0-100")
-    category = models.PositiveSmallIntegerField(choices=((1, "General-purpose"), (2, "Web"), (3, "Other")))
+    category = models.ForeignKey(SkillCategory, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -31,3 +45,4 @@ class Skill(models.Model):
 
     class Meta:
         ordering = ["category", "-proficiency", "name"]
+
