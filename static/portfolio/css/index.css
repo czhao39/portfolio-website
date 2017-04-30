@@ -171,10 +171,16 @@ h2.center-align:after {
 
 .table-div td {
     font-size: 1.1rem;
-    width: 50%;
-    min-width: 10rem;
     padding: .3rem 2rem;
     white-space: nowrap;
+}
+
+.table-div tr td:first-child {
+    width: 10rem;
+}
+
+.table-div tr td:nth-child(2) {
+    min-width: 10rem;
 }
 
 div.progress {
