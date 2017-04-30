@@ -183,6 +183,10 @@ h2.center-align:after {
     min-width: 10rem;
 }
 
+.skill-table {
+    margin-bottom: 25px;
+}
+
 div.progress {
     margin: 0;
     background-color: #607d8b;

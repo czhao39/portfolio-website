@@ -63,8 +63,10 @@
             <div id="skills" class="section container">
                 <h2 class="center-align">Skills</h2>
                 <div class="table-div">
-                    <table class="striped">
-                        {% for skill in skill_list %}
+                    {% for category in skillcategory_list %}
+                    <h4>{{ category.name }}</h4>
+                    <table class="striped skill-table">
+                        {% for skill in category.skill_set.all %}
                         <tr>
                             <td><span class="right skill-name">{{ skill.name }}</span></td>
                             <td>
@@ -75,6 +77,7 @@
                         </tr>
                         {% endfor %}
                     </table>
+                    {% endfor %}
                 </div>
             </div>
 

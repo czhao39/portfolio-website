@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 
-from .models import Project, Skill
+from .models import Project, SkillCategory
 
 
 class IndexView(generic.TemplateView):
@@ -10,5 +10,5 @@ class IndexView(generic.TemplateView):
     def get_context_data(self):
         context = super(IndexView, self).get_context_data()
         context["project_list"] = Project.objects.all()
-        context["skill_list"] = Skill.objects.all()
+        context["skillcategory_list"] = SkillCategory.objects.all()
         return context
