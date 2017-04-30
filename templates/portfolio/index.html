@@ -90,11 +90,11 @@
                                 <img class="activator" src="{% static "portfolio/img/project_images/" %}{{ project.im_name }}" alt="{{ project.im_name }}">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4"><span class="card-name activator">{{ project.name }}</span><i class="material-icons right">info_outline</i></span>
+                                <span class="card-title activator grey-text text-darken-4"><span class="card-name activator">{{ project.name }}</span><i class="material-icons right card-open-icon">info_outline</i></span>
                                 <p>{{ project.summary }}</p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4"><span class="card-name">{{ project.name }}</span><i class="material-icons right">close</i></span>
+                                <span class="card-title grey-text text-darken-4"><span class="card-name">{{ project.name }}</span><i class="material-icons right card-close-icon">close</i></span>
                                 <p>{{ project.details|safe }}</p>
                             </div>
                         </div>

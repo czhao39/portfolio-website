@@ -224,16 +224,25 @@ div.progress {
 
 .card:not(.more-to-come) i {
     font-size: 1.8rem;
+    line-height: 1 !important;
     position: absolute;
     right: 20px;
-    color: #555555;
+    opacity: 0.8;
     -webkit-transition: color .4s, text-shadow .4s;
     transition: color .4s, text-shadow .4s;
 }
 
 .card:not(.more-to-come) i:hover {
-    color: black;
+    opacity: 1.0;
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-open-icon {
+    color: #448aff;
+}
+
+.card-close-icon {
+    color: #ef5350;
 }
 
 .card .card-content p {
