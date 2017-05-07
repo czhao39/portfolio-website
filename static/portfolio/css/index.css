@@ -171,12 +171,12 @@ h2.center-align:after {
 
 .table-div td {
     font-size: 1.1rem;
-    padding: .3rem 2rem;
+    padding: .3rem 1rem;
     white-space: nowrap;
 }
 
 .table-div tr td:first-child {
-    width: 10rem;
+    width: 1rem;
 }
 
 .table-div tr td:nth-child(2) {
