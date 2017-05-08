@@ -349,3 +349,12 @@ footer {
     .card .card-content p {font-size: 1.4rem;}
     .card .card-reveal p {font-size: 1.2rem;}
 }
+
+#fancy_wrapper {
+    width: 100%;
+    max-width: 500px;
+}
+
+#fancy_wrapper circle {
+    fill: #00695c;
+}
