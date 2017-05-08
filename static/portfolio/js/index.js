@@ -1,11 +1,3 @@
-const FANCY_LEN = 10000;
-const MIN_OSC = 1;
-const NUM_CIRCS = 12;
-
-var count;
-var $circles;
-
-
 $(document).ready(function() {
     $window = $(window);
     $navbar = $(".navbar");
@@ -71,7 +63,20 @@ function loadProgress() {
     });
 }
 
+
+const FANCY_LEN = 10000;
+const MIN_OSC = 1;
+var NUM_CIRCS;
+
+var count;
+var $circles;
+
 function initialize_fancy() {
+    if ($window.width() <= 992)
+        NUM_CIRCS = 10;
+    else
+        NUM_CIRCS = 12;
+
     var fancy_wrapper = document.getElementById("fancy_wrapper");
     const radius = 90 / 3 / NUM_CIRCS;
     for (let i=0; i<NUM_CIRCS; i++) {
