@@ -139,10 +139,6 @@ body {
     color: white !important;
 }
 
-.card {
-    visibility: hidden;
-}
-
 h2.center-align {
     padding-bottom: 3px;
 }
@@ -210,6 +206,7 @@ div.progress {
 .card {
     margin: 10px 0;
     height: 350px;
+    visibility: hidden;
 }
 
 .card .card-content .card-title, .card .card-reveal .card-title {
@@ -318,6 +315,10 @@ footer {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
+}
+
+@media (min-width: 1201px) {
+    .card {height: 370px;}
 }
 
 /*@media (max-width: 992px) {
