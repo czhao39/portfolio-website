@@ -351,11 +351,10 @@ footer {
     .card {margin: 20px 5%;}
 }
 
-#fancy_wrapper {
-    width: 100%;
+#fancy-animation {
     max-width: 500px;
 }
 
-#fancy_wrapper circle {
+#fancy-animation circle {
     fill: #00695c;
 }
