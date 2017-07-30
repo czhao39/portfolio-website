@@ -2,7 +2,7 @@ $(document).ready(function() {
     $window = $(window);
     $navbar = $(".navbar");
 
-    var height = Math.max($window.height(), $(".intro-content").height()+330);
+    let height = Math.max($window.height(), $(".intro-content").height()+330);
 
     $(".page-section").height(height);
     $("#skills").css("margin-top", height+10);
@@ -36,14 +36,14 @@ $(document).ready(function() {
     });
     $window.scroll();
 
-    var options = [
+    let options = [
         {selector: "#skills h2.center-align", offset: 100, callback: underline},
         {selector: "#projects h2.center-align", offset: 100, callback: underline},
         {selector: "#skills .table-div", offset: 100, callback: loadProgress}
     ];
     Materialize.scrollFire(options);  // underline section titles on scroll into view
 
-    var sr = ScrollReveal();
+    let sr = ScrollReveal();
     sr.reveal(".card", {viewFactor: 0.1, duration: 1000});
 
     initialize_fancy();
@@ -55,8 +55,8 @@ function underline(el) {
 
 function loadProgress() {
     $("#skills .determinate").each(function() {
-        var the_width = this.style.width;
-        var $el = $(this);
+        let the_width = this.style.width;
+        let $el = $(this);
         $el.width(0);
         $el.css("visibility", "visible");
         $el.velocity({width: the_width}, {duration: 1000, easing: "easeOutCubic"});
@@ -67,6 +67,7 @@ function loadProgress() {
 const FANCY_LEN = 10000;
 const MIN_OSC = 1;
 var NUM_CIRCS;
+var RADIUS;
 
 var count;
 var $circles;
@@ -77,17 +78,17 @@ function initialize_fancy() {
     else
         NUM_CIRCS = 12;
 
-    var fancy_wrapper = document.getElementById("fancy_wrapper");
-    const radius = 90 / 3 / NUM_CIRCS;
+    let fancy_animation = document.getElementById("fancy-animation");
+    RADIUS = 100 / (3 * NUM_CIRCS - 1);
     for (let i=0; i<NUM_CIRCS; i++) {
         let circ = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        circ.setAttribute("cx", radius*3*(i+1));
-        circ.setAttribute("cy", 10);
-        circ.setAttribute("r", radius);
-        fancy_wrapper.appendChild(circ);
+        circ.setAttribute("cx", RADIUS + RADIUS*3*i);
+        circ.setAttribute("cy", RADIUS);
+        circ.setAttribute("r", RADIUS);
+        fancy_animation.appendChild(circ);
     }
 
-    $circles = $("#fancy_wrapper circle");
+    $circles = $("#fancy-animation circle");
     count = NUM_CIRCS;
     cycle();
 };
@@ -104,7 +105,7 @@ function cycle() {
         if (b.length === 1) b = "0" + b;
         let color = "#" + r + g + b;
         $circles.each(function(ind) {
-            $(this).velocity({cy: "20", fill: color}, {duration: FANCY_LEN/(MIN_OSC+ind)/2.0, loop: MIN_OSC+ind, complete: cycle});
+            $(this).velocity({cy: 20 - RADIUS, fill: color}, {duration: FANCY_LEN/(MIN_OSC+ind)/2.0, loop: MIN_OSC+ind, complete: cycle});
         });
     }
 }
