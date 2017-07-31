@@ -72,7 +72,7 @@
                     <table class="striped skill-table">
                         {% for skill in category.skill_set.all %}
                         <tr>
-                            <td><span class="right skill-name">{{ skill.name }}</span></td>
+                            <td><span class="skill-name">{{ skill.name }}</span></td>
                             <td>
                                 <div class="progress">
                                     <div class="determinate" style="width:{{ skill.proficiency }}%"></div>

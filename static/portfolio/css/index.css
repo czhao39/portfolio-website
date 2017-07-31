@@ -172,11 +172,11 @@ h2.center-align:after {
 .table-div td {
     font-size: 1.1rem;
     padding: .3rem 1rem;
-    white-space: nowrap;
 }
 
 .table-div tr td:first-child {
-    width: 1rem;
+    width: 8.5rem;
+    text-align: right;
 }
 
 .table-div tr td:nth-child(2) {
@@ -190,6 +190,9 @@ h2.center-align:after {
 div.progress {
     margin: 0;
     background-color: #607d8b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .progress .determinate {
