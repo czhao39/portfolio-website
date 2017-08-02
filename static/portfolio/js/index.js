@@ -20,14 +20,14 @@ $(document).ready(function() {
     else
         particlesJS.load("particles-js", "/static/portfolio/js/particlesjs-config.json");
 
-    $(".intro-content").velocity({top: "25%", opacity: 1}, {duration: 900, complete: function() {
+    TweenLite.to($(".intro-content"), 0.9, {top: "25%", opacity: 1, onComplete: function() {
         $navbar.css("top", "-20px");
-        $navbar.velocity({top: 0, opacity: 1}, {duration: 800});
-        $(".down-btn").velocity({bottom: 0, opacity: 1}, {duration: 800});
+        TweenLite.to($navbar, 0.8, {top: 0, opacity: 1});
+        TweenLite.to($(".down-btn"), 0.8, {bottom: 0, opacity: 1});
     }});
 
     $("#intro .arrow").click(function() {
-        $("html").velocity("scroll", {offset: height, duration: 400});
+        TweenLite.to(window, 0.4, {scrollTo: height});
     });
 
     $navbar.pushpin({top: 50});
@@ -59,7 +59,7 @@ function loadProgress() {
         let $el = $(this);
         $el.width(0);
         $el.css("visibility", "visible");
-        $el.velocity({width: the_width}, {duration: 1000, easing: "easeOutCubic"});
+        TweenLite.to($el, 1, {width: the_width, ease: Power1.easeInOut});
     });
 }
 
@@ -105,7 +105,8 @@ function cycle() {
         if (b.length === 1) b = "0" + b;
         let color = "#" + r + g + b;
         $circles.each(function(ind) {
-            $(this).velocity({cy: 20 - RADIUS, fill: color}, {duration: FANCY_LEN/(MIN_OSC+ind)/2.0, loop: MIN_OSC+ind, complete: cycle});
+            let period = FANCY_LEN / (MIN_OSC + ind);
+            TweenMax.to(this, period / 2 / 1000, {attr: {cy: 20 - RADIUS}, fill: color, yoyo: true, ease: Sine.easeInOut, repeat: (MIN_OSC+ind) * 2 - 1, onComplete: cycle});
         });
     }
 }
