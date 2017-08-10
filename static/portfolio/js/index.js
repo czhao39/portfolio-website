@@ -59,12 +59,12 @@ function loadProgress() {
         let $el = $(this);
         $el.width(0);
         $el.css("visibility", "visible");
-        TweenLite.to($el, 1, {width: the_width, ease: Power1.easeInOut});
+        TweenLite.to($el, 0.8, {width: the_width, ease: Power1.easeInOut});
     });
 }
 
 
-const FANCY_LEN = 10000;
+const FANCY_LEN = 14000;
 const MIN_OSC = 1;
 var NUM_CIRCS;
 var RADIUS;
@@ -74,9 +74,9 @@ var $circles;
 
 function initialize_fancy() {
     if ($window.width() <= 992)
-        NUM_CIRCS = 10;
+        NUM_CIRCS = 16;
     else
-        NUM_CIRCS = 12;
+        NUM_CIRCS = 20;
 
     let fancy_animation = document.getElementById("fancy-animation");
     RADIUS = 100 / (3 * NUM_CIRCS - 1);
