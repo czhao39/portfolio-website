@@ -93,8 +93,8 @@ body {
     font-size: 4.5rem;
     opacity: 1;
     color: white;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
+    -webkit-animation: blink .7s infinite;
+    -moz-animation: blink .7s infinite;
     animation: blink 1s infinite;
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 .arrow:hover {
-    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.18);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, .18);
     color: white !important;
 }
 
@@ -150,6 +150,7 @@ h2.center-align:after {
     height: 3px;
     width: 0;
     background-color: transparent;
+    -webkit-transition: width .5s ease, background-color .5s ease;
     transition: width .5s ease, background-color .5s ease;
 }
 
@@ -235,14 +236,14 @@ div.progress {
     line-height: 1 !important;
     position: absolute;
     right: 20px;
-    opacity: 0.8;
+    opacity: .8;
     -webkit-transition: color .4s, text-shadow .4s;
-    transition: color .4s, text-shadow .4s;
+    transition: opacity .4s, text-shadow .4s;
 }
 
 .card:not(.more-to-come) i:hover {
-    opacity: 1.0;
-    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, .2);
 }
 
 .card-open-icon {
@@ -267,6 +268,14 @@ div.progress {
     margin-top: -6px;
     margin-left: 3px;
     font-size: 30px;
+    opacity: .8;
+    -webkit-transition: color .4s, text-shadow .4s;
+    transition: opacity .4s, text-shadow .4s;
+}
+
+.more-to-come .fa-code:hover {
+    opacity: 1;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, .2);
 }
 
 .rocket {
@@ -280,6 +289,7 @@ div.progress {
     position: absolute;
     cursor: pointer;
     color: #9E9E9E;
+    -webkit-transition: color .2s;
     transition: color .2s;
 }
 
