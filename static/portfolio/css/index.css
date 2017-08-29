@@ -68,7 +68,7 @@ body {
     background: linear-gradient(#000000, #37474f);
 }
 
-.intro-content {
+.hero-content {
     position: absolute;
     top: 28%;
     left: 0;
@@ -76,20 +76,20 @@ body {
     opacity: 0;
 }
 
-.intro-text {
+.hero-text {
     margin-top: 5%;
     font-size: 3rem;
     font-weight: 200;
     line-height: 1;
 }
 
-#intro .typed {
+#hero .typed {
     font-family: "Roboto Mono", monospace;
     font-size: 3.3rem;
     line-height: 3;
 }
 
-#intro .typed-cursor{
+#hero .typed-cursor{
     font-size: 4.5rem;
     opacity: 1;
     color: white;
@@ -116,7 +116,7 @@ body {
     100% { opacity:1; }
 }
 
-#intro .favicon {
+#hero .favicon {
     max-width: 40%;
     max-height: 40%;
 }
@@ -165,7 +165,7 @@ h2.center-align:after {
     width: 90%;
 }
 
-#skills {
+#intro {
     margin-top: 100vh;
 }
 
@@ -325,16 +325,16 @@ footer {
 }
 
 /*@media (max-width: 992px) {
-    .intro-content {top: 140px;}
+    .hero-content {top: 140px;}
 }*/
 
 @media (max-width: 640px) and (min-width: 376px) {
     .navbar {line-height: 40px;}
     .navbar i {font-size: 1.5rem;}
     .page-title {font-size: 1.8rem;}
-    .intro-text {font-size: 2.5rem;}
-    #intro .typed {font-size: 2.5rem;}
-    #intro .typed-cursor {font-size: 3rem;}
+    .hero-text {font-size: 2.5rem;}
+    #hero .typed {font-size: 2.5rem;}
+    #hero .typed-cursor {font-size: 3rem;}
     .table-div td {padding: .3rem 1rem;}
 }
 
@@ -347,9 +347,9 @@ footer {
     .navbar i {font-size: 1.5rem;}
     .page-title {font-size: 1.3rem;}
     .navbar a {padding: 0 12px;}
-    .intro-text {font-size: 1.9rem;}
-    #intro .typed {font-size: 1.9rem;}
-    #intro .typed-cursor {font-size: 2.5rem;}
+    .hero-text {font-size: 1.9rem;}
+    #hero .typed {font-size: 1.9rem;}
+    #hero .typed-cursor {font-size: 2.5rem;}
     .table-div td {padding: .3rem 1rem;}
     .card {margin: 20px 5%;}
 }

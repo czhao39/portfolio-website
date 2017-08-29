@@ -2,10 +2,10 @@ $(document).ready(function() {
     $window = $(window);
     $navbar = $(".navbar");
 
-    let height = Math.max($window.height(), $(".intro-content").height()+330);
+    let height = Math.max($window.height(), $(".hero-content").height()+330);
 
     $(".page-section").height(height);
-    $("#skills").css("margin-top", height+10);
+    $("#intro").css("margin-top", height+10);
 
     $(".typed").typed({
         strings: ["roboticist", "web developer", "algorithmist", "inquirer"],
@@ -20,13 +20,13 @@ $(document).ready(function() {
     else
         particlesJS.load("particles-js", "/static/portfolio/js/particlesjs-config.json");
 
-    TweenLite.to($(".intro-content"), 0.9, {top: "25%", opacity: 1, onComplete: function() {
+    TweenLite.to($(".hero-content"), 0.9, {top: "22%", opacity: 1, onComplete: function() {
         $navbar.css("top", "-20px");
         TweenLite.to($navbar, 0.8, {top: 0, opacity: 1});
         TweenLite.to($(".down-btn"), 0.8, {bottom: 0, opacity: 1});
     }});
 
-    $("#intro .arrow").click(function() {
+    $("#hero .arrow").click(function() {
         TweenLite.to(window, 0.4, {scrollTo: height});
     });
 
