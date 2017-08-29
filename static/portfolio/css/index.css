@@ -269,6 +269,24 @@ div.progress {
     font-size: 30px;
 }
 
+.rocket {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    height: 14px;
+}
+
+.rocket > i {
+    position: absolute;
+    cursor: pointer;
+    color: #9E9E9E;
+    transition: color .2s;
+}
+
+.rocket > i:hover, .rocket > i.activated {
+    color: #448AFF;
+}
+
 footer {
     padding: 5px;
 }

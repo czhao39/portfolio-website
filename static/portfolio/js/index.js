@@ -47,6 +47,16 @@ $(document).ready(function() {
     sr.reveal(".card", {viewFactor: 0.1, duration: 1000});
 
     initialize_fancy();
+
+    let $rocket = $(".rocket > i");
+    $rocket.click(function() {
+        $rocket.addClass("activated");
+        let dist = Math.min($window.height(), $window.width()) + 20;
+        TweenLite.to($rocket, 0.8, {top: -dist, left: dist, ease: Power2.easeIn, onComplete: function() {
+            $rocket.css("display", "none");
+            Materialize.toast('Woah!', 2000, 'rounded');
+        }});
+    })
 });
 
 function underline(el) {
