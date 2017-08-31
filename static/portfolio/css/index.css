@@ -7,6 +7,7 @@ body {
 }
 
 .page-title {
+    font-family: "Lato", "Roboto", sans-serif;
     font-size: 2.2rem;
     font-weight: 300;
     padding-top: 6px;
@@ -21,20 +22,24 @@ body {
     top: -20px;
     opacity: 0;
     width: 100%;
-    padding: 50px 5% 0 5%;
+    padding: 50px 2% 0 2%;
     line-height: 40px;
     z-index: 10;
 }
 
 .navbar a {
-    font-family: "Lato", "Roboto", sans-serif;
-    color: #bdbdbd;
     padding-top: 3px;
+}
+
+.navbar ul a {
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #bdbdbd;
     -webkit-transition: color .4s;
     transition: color .4s;
 }
 
-.navbar a:hover {
+.navbar ul a:hover {
     color: white;
 }
 
