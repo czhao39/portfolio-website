@@ -3,6 +3,21 @@ from django.db import models
 
 class Project(models.Model):
     name = models.CharField(max_length=30)
+    MONTH_CHOICES = (
+        (0, "January"),
+        (1, "February"),
+        (2, "March"),
+        (3, "April"),
+        (4, "May"),
+        (5, "June"),
+        (6, "July"),
+        (7, "August"),
+        (8, "September"),
+        (9, "October"),
+        (10, "November"),
+        (11, "December"),
+    )
+    month = models.PositiveSmallIntegerField(choices=MONTH_CHOICES)
     year = models.PositiveSmallIntegerField()
     image = models.ImageField(upload_to="portfolio/static/portfolio/img/project_images/")
     summary = models.CharField(max_length=50)
@@ -17,7 +32,7 @@ class Project(models.Model):
 
 
     class Meta:
-        ordering = ["-year", "name"]
+        ordering = ["-year", "-month", "name"]
 
 
 class SkillCategory(models.Model):
