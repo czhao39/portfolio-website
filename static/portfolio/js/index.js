@@ -34,7 +34,7 @@ $(document).ready(function() {
     }});
 
     $("#hero .arrow").click(function() {
-        TweenLite.to(window, 0.4, {scrollTo: height});
+        $("html, body").animate({scrollTop: height+"px"}, 500);
     });
 
     $navbar.pushpin({top: 46});
