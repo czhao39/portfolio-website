@@ -28,7 +28,7 @@ class Project(models.Model):
         return self.image.url[self.image.url.rfind("/")+1:]
 
     def __str__(self):
-        return self.name
+        return "{} | {}-{}".format(self.name, self.month, self.year);
 
 
     class Meta:
@@ -55,7 +55,7 @@ class Skill(models.Model):
     category = models.ForeignKey(SkillCategory, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return "{} | {}".format(self.name, self.proficiency)
 
 
     class Meta:
