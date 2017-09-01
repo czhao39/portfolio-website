@@ -3,9 +3,12 @@ $(document).ready(function() {
     $navbar = $(".navbar");
 
     let height = Math.max($window.height(), $(".hero-content").height()+330);
+    console.log(height);
+    console.log($window.height());
+    console.log($(".hero-content").height()+330);
 
     $(".page-section").height(height);
-    $("#intro").css("margin-top", height+10);
+    $("#intro").css("margin-top", height);
 
     $(".typed").typed({
         strings: ["roboticist", "web developer", "algorithmist", "inquirer"],
@@ -15,12 +18,16 @@ $(document).ready(function() {
         loop: true,
     });
 
-    if ($window.width() <= 640)
+    let contentTop;
+    if ($window.width() <= 640) {
         particlesJS.load("particles-js", "/static/portfolio/js/particlesjs-config-mobile.json");
-    else
+        contentTop = "25%";
+    } else {
         particlesJS.load("particles-js", "/static/portfolio/js/particlesjs-config.json");
+        contentTop = "20%";
+    }
 
-    TweenLite.to($(".hero-content"), 0.9, {top: "22%", opacity: 1, onComplete: function() {
+    TweenLite.to($(".hero-content"), 0.9, {top: contentTop, opacity: 1, onComplete: function() {
         $navbar.css("top", "-20px");
         TweenLite.to($navbar, 0.8, {top: 0, opacity: 1});
         TweenLite.to($(".down-btn"), 0.8, {bottom: 0, opacity: 1});
@@ -30,7 +37,7 @@ $(document).ready(function() {
         TweenLite.to(window, 0.4, {scrollTo: height});
     });
 
-    $navbar.pushpin({top: 50});
+    $navbar.pushpin({top: 46});
     $window.scroll(function() {
         $navbar.css("background-color", "rgba(55, 71, 79, " + ($window.scrollTop()/height).toString() + ")");
     });
