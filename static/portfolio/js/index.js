@@ -3,9 +3,6 @@ $(document).ready(function() {
     $navbar = $(".navbar");
 
     let height = Math.max($window.height(), $(".hero-content").height()+330);
-    console.log(height);
-    console.log($window.height());
-    console.log($(".hero-content").height()+330);
 
     $(".page-section").height(height);
     $("#intro").css("margin-top", height);
@@ -76,7 +73,7 @@ function loadProgress() {
         let $el = $(this);
         $el.width(0);
         $el.css("visibility", "visible");
-        TweenLite.to($el, 0.8, {width: the_width, ease: Power1.easeInOut});
+        TweenLite.to($el, 0.8, {width: the_width, ease: Power1.easeOut});
     });
 }
 
