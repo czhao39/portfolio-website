@@ -82,6 +82,11 @@ body {
     opacity: 0;
 }
 
+img.portrait {
+    height: 25vh;
+    min-height: 150px;
+}
+
 .hero-text {
     margin-top: 5%;
     font-size: 3rem;
