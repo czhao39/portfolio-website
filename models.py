@@ -22,6 +22,7 @@ class Project(models.Model):
     image = models.ImageField(upload_to="portfolio/static/portfolio/img/project_images/")
     summary = models.CharField(max_length=70)
     details = models.TextField()
+    show = models.BooleanField(default=True)
 
     @property
     def im_name(self):
