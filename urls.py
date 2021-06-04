@@ -6,5 +6,5 @@ def get_index():
     return None
 
 urlpatterns = [
-    distill_path("", views.IndexView.as_view(), name='index', distill_func=get_index, distill_file='index.html'),
+    distill_path("", views.IndexView.as_view(), name='portfolio-index', distill_func=get_index, distill_file='index.html'),
 ]
