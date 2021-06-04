@@ -19,7 +19,7 @@ class Project(models.Model):
     )
     month = models.PositiveSmallIntegerField(choices=MONTH_CHOICES)
     year = models.PositiveSmallIntegerField()
-    image = models.ImageField(upload_to="portfolio/static/portfolio/img/project_images/")
+    image = models.ImageField(upload_to="project_images/")
     summary = models.CharField(max_length=70)
     details = models.TextField()
     show = models.BooleanField(default=True)
