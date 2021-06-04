@@ -1,5 +1,7 @@
 from django.db import models
 
+import os
+
 
 class Project(models.Model):
     name = models.CharField(max_length=30)
@@ -26,7 +28,7 @@ class Project(models.Model):
 
     @property
     def im_name(self):
-        return self.image.url[self.image.url.rfind("/")+1:]
+        return os.path.basename(self.image.name)
 
     def __str__(self):
         return "{} | {}-{}".format(self.name, self.month, self.year);
