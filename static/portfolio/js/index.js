@@ -30,6 +30,9 @@ $(document).ready(function() {
         TweenLite.to($(".down-btn"), 0.8, {bottom: 0, opacity: 1});
     }});
 
+    $(".modal").modal();
+    $("#intro-modal").modal("open");
+
     $("#hero .arrow").click(function() {
         $("html, body").animate({scrollTop: height+"px"}, 500);
     });

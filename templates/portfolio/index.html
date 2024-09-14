@@ -6,7 +6,7 @@
         <title>H. Charles Zhao | Portfolio</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css" integrity="sha256-oiVjjd5Fuot9f/fgwH5IBBjsOA7TDdcfSK5I2EZ0zMw=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" integrity="sha512-lmJhHTutaPnVBnfnZkZt2q0GqZjTPLERTGjPWnxBl0H6gG2tm9vsfOSbFLGTPbKBgOdLHD0+4Ryu1sXh5nA+Gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="{% static "portfolio/css/index.css" %}">
 
         <link rel="icon" href="{% static "portfolio/img/favicon.ico" %}">
@@ -28,7 +28,7 @@
         <!-- Scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js" integrity="sha256-xaGvP1a0KUJS18dRRK6dCsGY6SKZUrfhHLsx8X8TgSM=" crossorigin="anonymous"></script>
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js" integrity="sha256-Ff9bGnIM3a8Yj4saIp6RH8xkb1rQZpHqoFw/6m08fgA=" crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" integrity="sha512-IcKq5DomZY4Gw+wmbDALeSPnNPYEwcv3dXdolW2TEoUVXQoCvj22GGilLfpZroglJgldOK8DAGcwNDsrtvv0zA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js" integrity="sha256-V1VQYyDCfJqlhl3BJnGu8hpodtkri7VafAzkkvd2K8c=" crossorigin="anonymous"></script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" crossorigin="anonymous"></script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js" integrity="sha256-SDKDHU0lE3Q1tYhe8x3nqrEl15dwjAM3sEIP0G50RBc=" crossorigin="anonymous"></script>
@@ -58,13 +58,23 @@
                         <li><a href="{% static "portfolio/docs/HaichengCharlesZhao_Resume.pdf" %}" rel="noopener noreferrer" target="_blank" title="Résumé"><i class="fa fa-file-text-o fa-2x"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/czhao39/" rel="noopener noreferrer" target ="_blank" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
                         <li><a href="https://github.com/czhao39" target="_blank" rel="noopener noreferrer" title="Github"><i class="fa fa-github fa-2x"></i></a></li>
-                        <li><a href="mailto:hczhao@princeton.edu" target="_blank" rel="noopener noreferrer" title="Email"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+                        <li><a href="mailto:hczhao@alumni.princeton.edu" target="_blank" rel="noopener noreferrer" title="Email"><i class="fa fa-envelope-o fa-2x"></i></a></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
         <main>
+            <div id="intro-modal" class="modal">
+                <div class="modal-content">
+                    <p>
+                    Welcome to my portfolio website! I created this website back in high school and am now only minimally maintaining it. Please ignore the Skills section which is out of date, but feel free to peruse the Projects section which includes some of my projects from high school and college.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <span class="modal-close waves-effect waves-light btn-flat">Close</span>
+                </div>
+            </div>
             <div id="hero" class="page-section valign-wrapper scrollspy">
                 <div id="particles-js"></div>
                 <div class="valign center-align hero-content container">
@@ -77,7 +87,7 @@
 
             <div id="intro" class="section container center">
                 <p>
-                Hey there! I'm a Computer Science major at Princeton University minoring in Physics and Statistics &amp; Machine Learning. I'm interested in and have experience with machine learning, econometrics, autonomous vehicles, web development, and quantum computing. I love learning about new technologies in my free time, as well as running, rock climbing, and investing in the stock market. Check out my projects below, and find more information about me by clicking the links in the navbar. Feel free to <a href="mailto:hczhao@princeton.edu" target="_blank" rel="noopener noreferrer">drop me a line</a>!
+                Hey there! I'm a Computer Science major at Princeton University minoring in Physics and Statistics &amp; Machine Learning. I'm interested in and have experience with machine learning, econometrics, autonomous vehicles, web development, and quantum computing. I love learning about new technologies in my free time, as well as running, rock climbing, and investing in the stock market. Check out my projects below, and find more information about me by clicking the links in the navbar. Feel free to <a href="mailto:hczhao@alumni.princeton.edu" target="_blank" rel="noopener noreferrer">drop me a line</a>!
                 </p>
             </div>
 
@@ -106,7 +116,7 @@
 
             <div class="container center">
                 <svg xmlns="http://www.w3.org/2000/svg" id="fancy-animation" viewBox="0 0 100 20"></svg>
-                <div class="grey-text">My attempt at simulating <a href="https://youtu.be/ip0PvOSj2AI" target="_blank" rel="noopener noreferrer">this</a> 'cause it looks cool.</div>
+                <div class="grey-text">A little simulation of <a href="https://youtu.be/ip0PvOSj2AI" target="_blank" rel="noopener noreferrer">this</a>.</div>
             </div>
 
 
