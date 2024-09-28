@@ -17,10 +17,10 @@ $(document).ready(function() {
 
     let contentTop;
     if ($window.width() <= 640) {
-        particlesJS.load("particles-js", "/static/portfolio/js/particlesjs-config-mobile.json");
+        tsParticles.loadJSON("particles-js", "/static/portfolio/js/particlesjs-config-mobile.json");
         contentTop = "25%";
     } else {
-        particlesJS.load("particles-js", "/static/portfolio/js/particlesjs-config.json");
+        tsParticles.loadJSON("particles-js", "/static/portfolio/js/particlesjs-config.json");
         contentTop = "20%";
     }
 
